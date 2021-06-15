@@ -1,0 +1,148 @@
+/*------------ USED ACROSS THE SITE ------------*/
+@import url('https://fonts.googleapis.com/css?family=Marcellus:100,200,300,400,500,600,700&display=swap|Muli:100,200,300,400,500,600,700&display=swap');
+
+body,html{
+    height:100%;
+}
+
+.frame {
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 34px;
+    color: rgb(255, 32, 68); 
+}
+
+h2 {
+    font-family: "Marcellus", serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(57, 34, 75);
+}
+
+h3 {
+    font-family: "Muli", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(57, 34, 75);
+}
+
+/*------------ HEADER ------------*/
+header {
+    display: flex;
+}
+
+.float-right {
+    float: right;
+}
+
+#wrapper {
+    background: url("../images/wineCountry.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* credit: code to align and size navbar taken from https://stackoverflow.com/questions/53171559/navbar-smaller-than-navbar-brand and edited slightly do fit project needs */
+.navbar {
+    width: 100%; 
+    white-space: nowrap; 
+    background: rgba(0, 202, 43, 0.5);
+} 
+
+.nav-link {
+    color: #222222;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: "Muli", sans-serif;
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-nav > .active > a { 
+    font-weight: 800;  
+    text-decoration: underline; 
+}
+
+.navbar-nav a:hover {
+   text-decoration: underline; 
+   color: #222222;
+}
+
+
+/*------------ FOOTER ------------*/
+.footer {
+    width: 100%;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Muli", sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+/* credit: code to center text taken from https://www.w3schools.com/css/css_align.asp */
+.footer p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.designby {
+    text-decoration: underline;
+    color: #222222;
+}
+
+p a:hover {
+   font-weight: 800; 
+   color: #222222;
+}
+
+
+/*------------ LANDING PAGE ------------*/
+#certlogo {
+    width: 100vw;
+    margin-top: 10vw;
+}
+
+.textbox {
+   margin: 5vh 5vw;
+   padding: 1vh .05vh;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.textbox a:hover {
+   text-decoration: underline;
+   color: rgb(255, 32, 68); 
+}
+
+#findus, #facebook p {
+    font-family: "Muli", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF; 
+}
+
+#findus {
+    margin-top: 12vh;
+    margin-bottom: 0;
+}
+
+.fa-facebook-square {
+    color: #FFF; 
+    margin-top: 8px;
+}
