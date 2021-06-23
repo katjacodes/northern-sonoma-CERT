@@ -13,7 +13,7 @@
     <body id="wrapper">
         <header>
 
-            <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited slightly do fit project needs -->
+            <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited slightly to fit project needs -->
             <nav class="navbar navbar-expand-md">
 
                 <!-- Toggler/collapsibe Button -->
@@ -39,6 +39,28 @@
             </nav>
         </header> 
 
+        <!--credit: code for burger menu taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited to fit project needs -->
+        <form id="myForm">
+            <label>Name | Nombre</label>
+            <br/>
+            <input name="full_name" type="text" required />
+            <br/>
+            <label>Email | Correo Electrónico</label>
+            <br/>
+            <input name="email" type="email" required />
+            <br/>
+            <label>Participation | Participación</label>
+            <br/>
+            <input type="radio" id="age" name="age" value="empty" /> <br/>
+            <input type="radio" id="age" name="age" value="yes" /> Yes, I'm interested in participating in this activity.<br/>
+            <input type="radio" id="age" name="age" value="si" /> Sí, me interesa participar en esta actividad.<br/>
+            <br/>
+            <br/>
+            <br/>
+        </form>
+        <button onclick="SubForm()">Submit</button>
+    
+
         
 
         <footer class="navbar fixed-bottom">
@@ -50,6 +72,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        <!--credit: code for burger menu taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited slightly to fit project needs -->
+        <script>
+            function SubForm (){
+                $.ajax({
+                    url:'https://api.apispreadsheets.com/data/410/',
+                    type:'post',
+                    data:$("#myForm").serializeArray(),
+                    success: function(){
+                    alert("Form Data Submitted :)")
+                    },
+                    error: function(){
+                    alert("There was an error :(")
+                    }
+                });
+            }
+        </script>
         
     </body>
 </html>
