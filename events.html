@@ -63,6 +63,7 @@
 
         
 
+
         <footer class="navbar fixed-bottom">
             <div class="footer">
                 <p>Layout & Design © 2021 <a target="_blank" href="https://lettersandbytes.com/" aria-label="Letters and Bytes website" class="designby"><span>Letters and Bytes</span></a></p>   
@@ -72,27 +73,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
+        <script
             src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous">
         </script>
-        <!--credit: code for burger menu taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited slightly to fit project needs -->
-        <script>
-            function SubForm (){
-                $.ajax({
-                    url:'https://api.apispreadsheets.com/data/410/',
-                    type:'post',
-                    data:$("#myForm").serializeArray(),
-                    success: function(){
-                    alert("Form Data Submitted :)")
-                    },
-                    error: function(){
-                    alert("There was an error :(")
-                    }
-                });
-            }
-        </script>
-        
+        <script src="assets/js/script.js"></script> 
     </body>
 </html>
