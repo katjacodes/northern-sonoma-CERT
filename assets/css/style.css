@@ -198,3 +198,25 @@ p a:hover {
   font-size: 35px;
   cursor: pointer;
 }
+
+.gallerypic {
+    width: 103px;
+    height: auto;
+    *padding-right: 10px;
+    
+}
+
+/*credit: code for the scrolling feature taken from https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 and edited to fit project needs */
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+  
+.photo {
+    display: inline-block;
+}
+
+#imgcontainer {
+    margin-top: 10vh;
+}
