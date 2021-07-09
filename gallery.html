@@ -39,39 +39,21 @@
             </nav>
         </header> 
 
-        <!--credit: code for image gallery taken from https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp and edited to fit project needs -->
-        <!-- The grid: four columns -->
-        <div class="scrolling-wrapper">
-            <div class="photo">
-                <img src="assets/images/test images/globes.jpg" alt="Old globes" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/palmtrees.jpg" alt="Palmtrees in front of the evening sky" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/sky.jpg" alt="The sky above the clouds" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/sonoma1.jpg" alt="A vinyard in the sunshine" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/sonoma2.jpg" alt="A tree without leaves in front of blue sky" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/sonoma3.jpg" alt="a black-and-white picture of a vinyard" class="gallerypic" onclick="myFunction(this);">
-            </div>
-            <div class="photo">
-                <img src="assets/images/test images/sunshine.jpg" alt="Hands forming a heart with the sun shining through" class="gallerypic" onclick="myFunction(this);">
-            </div>
+        <!--credit: code for image gallery taken from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html and edited to fit project needs -->
+        <img id="myImg" src="assets/images/test images/globes.jpg" alt="Trolltunga, Norway" width="300" height="200">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+  
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
-
-        <!-- The expanding image container -->
-        <div class="container" id="imgcontainer">
-        <!-- Close the image -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-        <!-- Expanded image -->
-        <img id="expandedImg" style="width:100%">
         
         <footer class="navbar fixed-bottom">
             <div class="footer">
