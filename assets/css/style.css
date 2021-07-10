@@ -153,6 +153,14 @@ p a:hover {
     margin: 8vh 4vw;
 }
 
+h1 {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 34px;
+    color: rgb(255, 32, 68); 
+}
+
 
 /*------------ GALLERY PAGE ------------*/
 #gallerynavbar {
