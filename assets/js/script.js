@@ -18,18 +18,21 @@ function SubForm (){
 
 /*------------ GALLERY PAGE ------------*/
 
+/* credit: code for image gallery taken from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html and edited to fit project needs with the support of question asked in Stackoverflow: https://stackoverflow.com/questions/68310635/modal-image-issue-in-javascript/68311080#68311080 */
 // Get the modal
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var imgs = document.getElementsByClassName('galleryPic');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
+  }
 }
 
 // Get the <span> element that closes the modal
