@@ -47,21 +47,24 @@
             <br/>
             <label>Email | Correo Electrónico</label>
             <br/>
-            <input name="email" type="email" required />
+            <input id="email" name="email" type="email" required />
             <br/>
             <label>Participation | Participación</label>
             <br/>
-            <input type="radio" id="interest" name="interest" value="yes" /> Yes, I'm interested in participating in this activity.<br/>
-            <input type="radio" id="interest" name="interest" value="si" /> Sí, me interesa participar en esta actividad.<br/>
+            <div>
+                <input type="radio" id="interest" name="interest" value="yes" /> 
+                <label for="yes">Yes, I'm interested in participating in this activity.</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="interest" name="interest" value="yes" /> 
+                <label for="si">Sí, me interesa participar en esta actividad.</label><br/>
+            </div>
             <br/>
             <br/>
-            <br/>
+            <p>
+                <input id="formsubmit" class="newsletter-submit" type="submit" value="Submit" />
+            </p>
         </form>
-        <button onclick="SubForm()">Submit</button>
-    
-
-        
-
 
         <footer class="navbar fixed-bottom">
             <div class="footer">

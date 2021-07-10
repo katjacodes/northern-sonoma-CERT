@@ -1,7 +1,7 @@
 /*------------ EVENTS PAGES ------------*/
 /* credit: code for API integration taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited slightly to fit project needs */
         
-function SubForm (){
+/* function SubForm (){
     $.ajax({
         url:'https://api.apispreadsheets.com/data/15211/',
         type:'post',
@@ -13,9 +13,36 @@ function SubForm (){
         alert("There was an error :(")
         }
     });
-}
-       
+} */
 
+function SubForm() {
+  var email = $('#email').val();
+  if(email === "") {
+   return false;
+  }
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+ }
+       $("#myForm").submit(function(){
+         if(validateForm()) {
+ 
+        var vals = $(this).serialize();
+ 
+         $.ajax({
+             url: 'https://api.apispreadsheets.com/data/15211/',  
+             method: "POST",
+             data: vals,
+             success: function(){
+             alert("Form Data Submitted :)")
+             },
+             error: function(){
+             alert("There was an error :(")
+             }
+             });
+  
+         return false; // prevent from submit
+     };
+       
 /*------------ GALLERY PAGE ------------*/
 
 /* credit: code for image gallery taken from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html and edited to fit project needs with the support of question asked in Stackoverflow: https://stackoverflow.com/questions/68310635/modal-image-issue-in-javascript/68311080#68311080 */

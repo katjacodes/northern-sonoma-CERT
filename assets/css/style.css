@@ -148,12 +148,13 @@ p a:hover {
 }
 
 /*------------ GALLERY PAGE ------------*/
+
 #gallerynavbar {
     margin-bottom: 5vh;
 }
+
 /*credit: code for image gallery taken from https://codepen.io/mugas/pen/gOaJeMm and edited to fit project needs*/
-/* Grid Format */
-/*Formats the text inside the image*/
+
 .container > div {
     display: flex;
     justify-content: center;
@@ -182,7 +183,6 @@ p a:hover {
   
   .container > div:hover img {
     opacity: 0.7;
-  }
   }
 
 /* credit: code for modal styling taken from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html and edited to fit project needs with the support of question asked in Stackoverflow: https://stackoverflow.com/questions/68310635/modal-image-issue-in-javascript/68311080#68311080 */
