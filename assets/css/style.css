@@ -147,8 +147,14 @@ p a:hover {
     margin-top: 8px;
 }
 
-/*------------ GALLERY PAGE ------------*/
 
+/*------------ EVENTS PAGE ------------*/
+#myForm {
+    margin: 8vh 4vw;
+}
+
+
+/*------------ GALLERY PAGE ------------*/
 #gallerynavbar {
     margin-bottom: 5vh;
 }
@@ -257,11 +263,19 @@ p a:hover {
     .textbox {
         margin-top: 100px;
     }
+
+    #myForm {
+        margin-left: 35vw;
+    }
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
     #findus {
         margin-top: 150px;
+    }
+
+    #myForm {
+        margin-left: 10vw;
     }
 }
 
