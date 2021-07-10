@@ -1,5 +1,5 @@
 /*------------ EVENTS PAGES ------------*/
-/* credit: code for API integration taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited slightly to fit project needs */
+/* credit: code for API integration taken from https://stackoverflow.com/questions/41777627/verify-email-address-before-sending-it-via-html-form-with-ajax and https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited slightly to fit project needs */
         
 /* function SubForm (){
     $.ajax({

@@ -244,3 +244,32 @@ p a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*------------ MEDIA QUERIES ------------*/
+@media only screen and (min-width: 768px) {
+    #certlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }  
+
+    .textbox {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {}
+    #findus {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+    #certlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }  
+}
