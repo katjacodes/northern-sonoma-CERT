@@ -13,7 +13,7 @@ h1 {
     font-family: "Marcellus", serif;
     font-weight: 700;
     text-align: center;
-    font-size: 34px;
+    font-size: 28px;
     color: rgb(255, 32, 68); 
 }
 
@@ -111,12 +111,14 @@ p a:hover {
 
 /*------------ LANDING PAGE ------------*/
 #certlogo {
-    width: 100vw;
-    margin-top: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 .textbox {
-   margin: 5vh 5vw;
+   margin: 4vh 5vw;
    padding: 1vh .05vh;
    background-color: rgba(0, 0, 0, 0.6);
    border-radius: 10px;
@@ -138,13 +140,14 @@ p a:hover {
 }
 
 #findus {
-    margin-top: 12vh;
-    margin-bottom: 0;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
 }
 
 .fa-facebook-square {
     color: #FFF; 
     margin-top: 8px;
+    margin-bottom: 5vh;
 }
 
 
@@ -153,20 +156,7 @@ p a:hover {
     margin: 8vh 4vw;
 }
 
-h1 {
-    font-family: "Marcellus", serif;
-    font-weight: 700;
-    text-align: left;
-    font-size: 34px;
-    color: rgb(255, 32, 68); 
-}
-
-
 /*------------ GALLERY PAGE ------------*/
-#gallerynavbar {
-    margin-bottom: 5vh;
-}
-
 /*credit: code for image gallery taken from https://codepen.io/mugas/pen/gOaJeMm and edited to fit project needs*/
 
 .container > div {
@@ -260,16 +250,19 @@ h1 {
 }
 
 /*------------ MEDIA QUERIES ------------*/
-@media only screen and (min-width: 768px) {
-    #certlogo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }  
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    #findus {
+        margin-top: 10vh;
+    }
+}
 
-    .textbox {
-        margin-top: 100px;
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-family: "Marcellus", serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 34px;
+        color: rgb(255, 32, 68); 
     }
 
     #myForm {
