@@ -114,6 +114,7 @@ p a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 75%;
 }
 
@@ -250,12 +251,6 @@ p a:hover {
 }
 
 /*------------ MEDIA QUERIES ------------*/
-@media only screen and (min-width: 768px) and (orientation: portrait) {
-    #findus {
-        margin-top: 10vh;
-    }
-}
-
 @media only screen and (min-width: 768px) {
     h1 {
         font-family: "Marcellus", serif;
@@ -272,7 +267,7 @@ p a:hover {
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     #findus {
-        margin-top: 150px;
+        margin-top: 10vh;
     }
 
     #myForm {
@@ -280,11 +275,22 @@ p a:hover {
     }
 }
 
-@media only screen and (min-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
     #certlogo {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        margin-top: 10px;
+        width: 45%;
     }  
 }
+
+.textbox {
+    margin: 4vh 25vw;
+    padding: 1vh .05vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+ }

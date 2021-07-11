@@ -23,25 +23,26 @@ function SubForm() {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
  }
-       $("#myForm").submit(function(){
+      $("#myForm").submit(function(){
          if(validateForm()) {
  
         var vals = $(this).serialize();
  
-         $.ajax({
-             url: 'https://api.apispreadsheets.com/data/15211/',  
-             method: "POST",
-             data: vals,
-             success: function(){
-             alert("Form Data Submitted :)")
-             },
-             error: function(){
-             alert("There was an error :(")
-             }
-             });
-  
-         return false; // prevent from submit
-     };
+        $.ajax({
+          url: '[REDACTED]',  
+          method: "POST",
+          data: vals,
+          success: function(){
+          alert("Form Data Submitted :)")
+          },
+          error: function(){
+          alert("There was an error :(")
+          }
+        });
+        return true;
+        }
+        return false; // prevent from submit
+      });
        
 /*------------ GALLERY PAGE ------------*/
 
