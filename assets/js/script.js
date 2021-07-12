@@ -29,19 +29,19 @@ function SubForm() {
         var vals = $(this).serialize();
  
         $.ajax({
-          url: '[REDACTED]',  
+          url: 'https://api.apispreadsheets.com/data/15211/',  
           method: "POST",
           data: vals,
           success: function(){
-          alert("Form Data Submitted :)")
+          alert("Form Data Submitted")
           },
           error: function(){
-          alert("There was an error :(")
+          alert("There was an error")
           }
         });
         return true;
         }
-        return false; // prevent from submit
+        return false; 
       });
        
 /*------------ GALLERY PAGE ------------*/
