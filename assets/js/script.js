@@ -53,13 +53,10 @@ var modal = document.getElementById('myModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imgs = document.getElementsByClassName('galleryPic');
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 for (let i = 0; i < imgs.length; i++) {
   imgs[i].onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
   }
 }
 
