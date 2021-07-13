@@ -13,7 +13,7 @@
         alert("There was an error :(")
         }
     });
-} */
+} 
 
 function SubForm() {
   var email = $('#email').val();
@@ -42,7 +42,127 @@ function SubForm() {
         return true;
         }
         return false; 
-      });
+      }); */
+
+/* credit: code for API integration taken from hhttps://www.javascripttutorial.net/javascript-dom/javascript-form-validation/ and edited slightly to fit project needs */
+const fullnameEl = document.querySelector('#fullname');
+const emailEl = document.querySelector('#email');
+
+const form = document.querySelector('#signup');
+
+
+const checkFullname = () => {
+
+    let valid = false;
+
+    const fullname = fullnameEl.value.trim();
+
+    if (!isRequired(fullname)) {
+        showError(fullnameEl, 'Name cannot be blank.');
+    } else {
+        showSuccess(fullnameEl);
+        valid = true;
+    }
+    return valid;
+};
+
+
+const checkEmail = () => {
+    let valid = false;
+    const email = emailEl.value.trim();
+    if (!isRequired(email)) {
+        showError(emailEl, 'Email cannot be blank.');
+    } else if (!isEmailValid(email)) {
+        showError(emailEl, 'Email is not valid.')
+    } else {
+        showSuccess(emailEl);
+        valid = true;
+    }
+    return valid;
+};
+
+
+const isEmailValid = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+};
+
+
+const isRequired = value => value === '' ? false : true;
+
+
+const showError = (input, message) => {
+    // get the form-field element
+    const formField = input.parentElement;
+    // add the error class
+    formField.classList.remove('success');
+    formField.classList.add('error');
+
+    // show the error message
+    const error = formField.querySelector('small');
+    error.textContent = message;
+};
+
+
+const showSuccess = (input) => {
+    // get the form-field element
+    const formField = input.parentElement;
+
+    // remove the error class
+    formField.classList.remove('error');
+    formField.classList.add('success');
+
+    // hide the error message
+    const error = formField.querySelector('small');
+    error.textContent = '';
+}
+
+
+form.addEventListener('submit', function (e) {
+    // prevent the form from submitting
+    e.preventDefault();
+
+    // validate fields
+    let isFullnameValid = checkFullname(),
+        isEmailValid = checkEmail();
+
+    let isFormValid = isFullnameValid &&
+        isEmailValid;
+
+    /// submit to the server if the form is valid
+    if (isFormValid) {
+      
+    }
+});
+
+
+const debounce = (fn, delay = 500) => {
+    let timeoutId;
+    return (...args) => {
+        // cancel the previous timer
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        // setup a new timer
+        timeoutId = setTimeout(() => {
+            fn.apply(null, args)
+        }, delay);
+    };
+};
+
+
+form.addEventListener('input', debounce(function (e) {
+    switch (e.target.id) {
+        case 'fullname':
+            checkFullname();
+            break;
+        case 'email':
+            checkEmail();
+            break;
+            break;
+    }
+}));
+
        
 /*------------ GALLERY PAGE ------------*/
 
@@ -50,7 +170,7 @@ function SubForm() {
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Get the image and insert it inside the modal
 var imgs = document.getElementsByClassName('galleryPic');
 var modalImg = document.getElementById("img01");
 for (let i = 0; i < imgs.length; i++) {

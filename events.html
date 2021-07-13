@@ -42,31 +42,37 @@
         <!--credit: code for burger menu taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited to fit project needs -->
         <h1 style="margin-top: 5vh; margin-bottom: 2vh;">Fire & Earthquake Safety Expo: Activity Sign-up</h1>
         <h1>Exposición de seguridad para incendios y terremotos: Formulario de registro</h1>
-        <form id="myForm">
-            <label>Name | Nombre</label>
-            <br/>
-            <input name="full_name" type="text" required />
-            <br/>
-            <label>Email | Correo Electrónico</label>
-            <br/>
-            <input id="email" name="email" type="email" required />
-            <br/>
-            <label>Participation | Participación</label>
-            <br/>
+
+        <form id="signup" class="form" method="post" action="https://api.apispreadsheets.com/data/15211/">
+            <div class="form-field 'form-field error' 'form-field success'">
+                <label for="fullname">Name | Nombre</label>
+                <input type="text" name="fullname" id="fullname" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field 'form-field error' 'form-field success'">
+                <label for="Email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+
             <div>
+                <label>Participation | Participación</label>
                 <input type="radio" id="yes" name="interest" value="yes" /> <br/>
                 <label for="yes">Yes, I'm interested in participating in this activity.</label><br/>
             </div>
+
             <div>
                 <input type="radio" id="si" name="interest" value="si" />  <br/>
                 <label for="si">Sí, me interesa participar en esta actividad.</label><br/>
             </div>
-            <br/>
-            <br/>
-            <p>
-                <input id="formsubmit" class="newsletter-submit" type="submit" value="Submit" />
-            </p> 
+            
+            <div class="form-field">
+                <input type="submit" value="Submit">
+            </div>
+
         </form>
+        
 
         <footer class="navbar fixed-bottom">
             <div class="footer">
@@ -77,11 +83,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script
-            src="https://code.jquery.python3 -m http.servercom/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous">
-        </script>
         <script src="assets/js/script.js"></script> 
     </body>
 </html>
