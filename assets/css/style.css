@@ -172,11 +172,10 @@ p a:hover {
     box-sizing: border-box;
 }
 
-
-body {
+.supercontainer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #f4f4f4;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,13 +184,13 @@ body {
     margin: 0;
 }
 
-.container {
+.container2 {
     background-color: #fff;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
-}
+} 
 
 .form {
     padding: 10px 20px;

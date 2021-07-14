@@ -39,50 +39,45 @@
             </nav>
         </header> 
 
-        <!--credit: code for burger menu taken from https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited to fit project needs -->
+        <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited slightly to fit project needs -->
         <h1 style="margin-top: 5vh; margin-bottom: 2vh;">Fire & Earthquake Safety Expo: Activity Sign-up</h1>
-        <h1>Exposición de seguridad para incendios y terremotos: Formulario de registro</h1>
 
-        <form id="signup" class="form" method="post" action="https://api.apispreadsheets.com/data/15211/">
-            <div class="form-field 'form-field error' 'form-field success'">
-                <label for="fullname">Name | Nombre</label>
-                <input type="text" name="fullname" id="fullname" autocomplete="off">
-                <small></small>
-            </div>
+        <div class="supercontainer">
+            <div class="container2">
+                <form name="registration" class="form" id="signup">
+                    <h1>Sign Up</h1>
+                    <div class="form-field">
+                        <label for="fullname">Name:</label>
+                        <input type="text" name="fullname" id="fullname" autocomplete="off">
+                        <small></small>
+                    </div>
+    
+                    <div class="form-field">
+                        <label for="Email">Email:</label>
+                        <input type="text" name="email" id="email" autocomplete="off">
+                        <small></small>
+                    </div>
 
-            <div class="form-field 'form-field error' 'form-field success'">
-                <label for="Email">Email:</label>
-                <input type="text" name="email" id="email" autocomplete="off">
-                <small></small>
+                    <div>
+                        <input type="checkbox" id="interest" name="interest" value="interested" /> 
+                        <label for="interest">Yes, I'm interested in participating in this activity.</label>
+                    </div>
+    
+                    <button type="submit">Register</button>
+                </form>
             </div>
-
-            <div>
-                <label>Participation | Participación</label>
-                <input type="radio" id="yes" name="interest" value="yes" /> <br/>
-                <label for="yes">Yes, I'm interested in participating in this activity.</label><br/>
-            </div>
-
-            <div>
-                <input type="radio" id="si" name="interest" value="si" />  <br/>
-                <label for="si">Sí, me interesa participar en esta actividad.</label><br/>
-            </div>
-            
-            <div class="form-field">
-                <input type="submit" value="Submit">
-            </div>
-
-        </form>
+        </div>
         
-
         <footer class="navbar fixed-bottom">
             <div class="footer">
                 <p>Layout & Design © 2021 <a target="_blank" href="https://lettersandbytes.com/" aria-label="Letters and Bytes website" class="designby"><span>Letters and Bytes</span></a></p>   
             </div>
         </footer> 
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+        <script>src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="assets/js/script.js"></script> 
+        <script src="assets/js/form-validation.js"></script> 
     </body>
 </html>
