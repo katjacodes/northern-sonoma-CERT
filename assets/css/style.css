@@ -1,6 +1,5 @@
 /*------------ USED ACROSS THE SITE ------------*/
 @import url('https://fonts.googleapis.com/css?family=Marcellus:100,200,300,400,500,600,700&display=swap|Muli:100,200,300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body,html{
     height:100%;
@@ -14,8 +13,8 @@ h1 {
     font-family: "Marcellus", serif;
     font-weight: 700;
     text-align: center;
-    font-size: 28px;
-    color: rgb(255, 32, 68); 
+    font-size: 34px;
+    color: #F16C16; 
 }
 
 h2 {
@@ -23,15 +22,17 @@ h2 {
     font-weight: 600;
     text-align: center;
     font-size: 30px;
-    color: rgb(57, 34, 75);
+    color: #0098FF;
 }
 
 h3 {
     font-family: "Muli", sans-serif;
+    font-weight: 600;
+    text-align: center;
     font-size: 21px;
-    font-weight: 400;
-    color: rgb(57, 34, 75);
+    color: #0098FF;
 }
+
 
 /*------------ HEADER ------------*/
 header {
@@ -120,18 +121,39 @@ p a:hover {
 }
 
 .textbox {
-   margin: 4vh 5vw;
+   width: 100%;
+   margin-top: 4vh;
    padding: 1vh .05vh;
    background-color: rgba(0, 0, 0, 0.6);
-   border-radius: 10px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   -o-border-radius: 10px;
 }
 
 .textbox a:hover {
    text-decoration: underline;
-   color: rgb(255, 32, 68); 
+   color: #F16C16; 
+}
+
+.textbox  h1 {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    color: #F16C16; 
+}
+
+.textbox  h2 {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    color: #F16C16; 
+}
+
+.textbox  p {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    color: #F16C16; 
 }
 
 #findus, #facebook p {
@@ -142,7 +164,7 @@ p a:hover {
 }
 
 #findus {
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 0vh;
 }
 
@@ -173,8 +195,6 @@ p a:hover {
 }
 
 .supercontainer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -190,17 +210,15 @@ p a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
+    margin-top: -80px;
 } 
 
 .form {
     padding: 10px 20px;
 }
 
-.form h1 {
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 20px;
-
+.form > h3 {
+    margin-top: 26px;
 }
 
 .form-field {
@@ -245,17 +263,16 @@ p a:hover {
 .btn {
     width: 100%;
     padding: 3%;
-    background: #007bff;
-    border-bottom: 2px solid #007bff;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
+    background: #F16C16;
+    border: 2px solid #777;
+    font-family: "Muli", sans-serif;
     color: #fff;
-    text-transform: uppercase;
+    margin-top: 26px;
 }
 
 .btn:hover {
-    background: #0069d9;
+    background: #0098FF;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -358,12 +375,28 @@ p a:hover {
 
 /*------------ MEDIA QUERIES ------------*/
 @media only screen and (min-width: 768px) {
-    h1 {
+    .textbox  h1 {
         font-family: "Marcellus", serif;
         font-weight: 700;
         text-align: center;
         font-size: 34px;
-        color: rgb(255, 32, 68); 
+        color: #F16C16; 
+    }
+    
+    .textbox  h2 {
+        font-family: "Marcellus", serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 30px;
+        color: #F16C16; 
+    }
+    
+    .textbox  p {
+        font-family: "Marcellus", serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 21px;
+        color: #F16C16; 
     }
 
     #myForm {
@@ -372,8 +405,16 @@ p a:hover {
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-    #findus {
+    #certlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 10vh;
+        width: 75%;
+    }
+    
+    #findus {
+        margin-top: 15vh;
     }
 
     #myForm {
@@ -389,17 +430,11 @@ p a:hover {
         margin-top: 10px;
         width: 45%;
     }  
-}
 
-.textbox {
-    margin: 4vh 25vw;
-    padding: 1vh .05vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
- }
+    #findus {
+        margin-top: 8vh;
+    }
+}
 
  @media only screen and (min-width: 992px) {
     .container {
