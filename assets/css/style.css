@@ -79,6 +79,40 @@ header {
    color: #222222;
 }
 
+.languages {
+    white-space: nowrap; 
+    background: rgba(0, 202, 43, 0.5);
+} 
+
+.languages .nav-link {
+    color: #222222;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Muli", sans-serif;
+}
+
+.language-selector a {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.language-selector > .nav-item {
+    display: table-cell;
+    padding: .1px;
+}
+
+
+.language-selector > .active > a { 
+    font-weight: 800;  
+    text-decoration: underline; 
+}
+
+.language-selector a:hover {
+   text-decoration: underline; 
+   color: #222222;
+}
+
 
 /*------------ FOOTER ------------*/
 .footer {
