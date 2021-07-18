@@ -155,10 +155,13 @@ p a:hover {
 }
 
 .textbox {
-   width: 100%;
    margin-top: 4vh;
-   padding: 1vh .05vh;
+   padding: 1vh 1vh;
    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.row {
+    justify-content: space-around;
 }
 
 .textbox a:hover {
@@ -322,7 +325,6 @@ label {
 
 /*------------ GALLERY PAGE ------------*/
 /*credit: code for image gallery taken from https://codepen.io/mugas/pen/gOaJeMm and edited to fit project needs*/
-
 .container > div {
     display: flex;
     justify-content: center;
@@ -438,6 +440,16 @@ img {
 
 /*------------ MEDIA QUERIES ------------*/
 @media only screen and (min-width: 768px) {
+    .textbox {
+        margin-top: 4vh;
+        padding: 1vh 1vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -o-border-radius: 25px;
+     }
+    
     .textbox  h1 {
         font-family: "Marcellus", serif;
         font-weight: 700;
@@ -482,6 +494,10 @@ img {
         width: 400px;
         margin-top: -80px;
     } 
+
+    .container {
+        margin-top: 5vh;
+    }
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
@@ -510,11 +526,11 @@ img {
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
-        width: 45%;
+        width: 35%;
     }  
 
     #findus {
-        margin-top: 8vh;
+        margin-top: 4vh;
     }
 }
 
