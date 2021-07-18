@@ -1,11 +1,11 @@
 # Northern Sonoma CERT
 
 <div align="center">
-    <img src="#" alt="Mockup of how home page looks on diffferent screen sizes"/>
+    <img src="assets/images/mockup.png" alt="Mockup of how home page looks on diffferent screen sizes"/>
 </div>
 <br>
 
-[View deployed site here](https://katjacodes.github.io/#/)
+[View deployed site here](https://katjacodes.github.io/northern-sonoma-CERT/)
 
 ## Project Description
 The online presence for Northern Sonoma CERT was created by Katja Schatte as a digital platform for Northern Sonoma CERT, a community emergency preparedness program located in northern Sonoma County in northern California, United States. 

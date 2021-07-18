@@ -150,13 +150,13 @@ p a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 6vh;
     width: 75%;
 }
 
 .textbox {
-   margin-top: 4vh;
-   padding: 1vh 1vh;
+   margin-top: 10vh;
+   padding: 4vw 4vw;
    background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -201,7 +201,7 @@ p a:hover {
 }
 
 #findus {
-    margin-top: 10vh;
+    margin-top: 18vh;
     margin-bottom: 0vh;
 }
 
@@ -454,7 +454,7 @@ img {
         font-family: "Marcellus", serif;
         font-weight: 700;
         text-align: center;
-        font-size: 34px;
+        font-size: 36px;
         color: #F16C16; 
     }
     
@@ -510,7 +510,7 @@ img {
     }
     
     #findus {
-        margin-top: 10vh;
+        margin-top: 18vh;
     }
 
     .frame {
@@ -530,7 +530,7 @@ img {
     }  
 
     #findus {
-        margin-top: 4vh;
+        margin-top: 7vh;
     }
 }
 
