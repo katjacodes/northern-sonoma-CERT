@@ -1,7 +1,7 @@
 /*------------ USED ACROSS THE SITE ------------*/
 @import url('https://fonts.googleapis.com/css?family=Marcellus:100,200,300,400,500,600,700&display=swap|Muli:100,200,300,400,500,600,700&display=swap');
 
-body,html{
+body,html {
     height:100%;
 }
 
@@ -35,14 +35,6 @@ h3 {
 
 
 /*------------ HEADER ------------*/
-header {
-    display: flex;
-}
-
-.float-right {
-    float: right;
-}
-
 #wrapper {
     background: url("../images/wineCountry.png");
     background-size: cover;
@@ -54,7 +46,7 @@ header {
 .navbar {
     width: 100%; 
     white-space: nowrap; 
-    background: rgba(0, 202, 43, 0.5);
+    background: rgba(0, 202, 43, 0.8);
 } 
 
 .nav-link {
@@ -81,7 +73,6 @@ header {
 
 .languages {
     white-space: nowrap; 
-    background: rgba(0, 202, 43, 0.5);
 } 
 
 .languages .nav-link {
@@ -111,8 +102,7 @@ header {
 .language-selector a:hover {
    text-decoration: underline; 
    color: #222222;
-}
-
+} 
 
 /*------------ FOOTER ------------*/
 .footer {
@@ -150,13 +140,13 @@ p a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6vh;
+    margin-top: 60px;
     width: 75%;
 }
 
 .textbox {
-   margin-top: 10vh;
-   padding: 4vw 4vw;
+   margin-top: 120px;
+   padding: 6vw 6vw;
    background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -191,24 +181,6 @@ p a:hover {
     text-align: center;
     font-size: 20px;
     color: #F16C16; 
-}
-
-#findus, #facebook p {
-    font-family: "Muli", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #FFF; 
-}
-
-#findus {
-    margin-top: 18vh;
-    margin-bottom: 0vh;
-}
-
-.fa-facebook-square {
-    color: #FFF; 
-    margin-top: 8px;
-    margin-bottom: 5vh;
 }
 
 
@@ -440,8 +412,12 @@ img {
 
 /*------------ MEDIA QUERIES ------------*/
 @media only screen and (min-width: 768px) {
+    #facebooklogo {
+        margin-left: 60px;
+    }
+    
     .textbox {
-        margin-top: 4vh;
+        margin-top: 100px;
         padding: 1vh 1vh;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 25px;
@@ -508,10 +484,6 @@ img {
         margin-top: 10vh;
         width: 75%;
     }
-    
-    #findus {
-        margin-top: 18vh;
-    }
 
     .frame {
         padding:0 5px 40px 5px;
@@ -525,14 +497,9 @@ img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
+        margin-top: 55px;
         width: 35%;
     }  
-
-    #findus {
-        margin-top: 7vh;
-    }
-}
 
  @media only screen and (min-width: 992px) {
     .container {
@@ -556,7 +523,3 @@ img {
         margin-right: 400px;
     }
 }
-
-
-
- 

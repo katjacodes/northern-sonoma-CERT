@@ -16,9 +16,24 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <header>
-            <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited slightly to fit project needs and edited slightly to fit project needs -->
+            
+            <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited to fit project needs -->
             <nav class="navbar navbar-expand-md">
-
+                
+                <div class="languages">
+                    <ul class="language-selector" style="list-style:none">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">ENG</a>
+                        </li>
+                        <li class="nav-item">
+                            <span>|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_es.html">ES</a>
+                        </li>
+                    </ul>
+                </div>
+                
                 <!-- Toggler/collapsibe Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="menu">
                     <span class="navbar-toggler-icon"></span>
@@ -27,7 +42,7 @@
 
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -38,21 +53,14 @@
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav sm-icons">
+                        <li id="facebooklogo" class="nav-item"><a class="nav-link" href="https://www.facebook.com/norsococert/"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <span class="sr-only">Facebook</span>
+                    </ul>
+                    </ul>
+                    
                 </div>   
             </nav>
-            <div class="languages">
-                <ul class="ml-auto language-selector" style="list-style:none">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="gallery.html">ENG</a>
-                    </li>
-                    <li class="nav-item">
-                        <span>|</span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery_es.html">ES</a>
-                    </li>
-                </ul>
-            </div> 
         </header> 
 
         <!--credit: code for image gallery taken from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html and edited to fit project needs -->
