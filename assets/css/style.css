@@ -210,8 +210,9 @@ p a:hover {
 
 
 /*------------ EVENTS PAGE ------------*/
-#myForm {
-    margin: 8vh 4vw;
+#headingevents {
+    margin-top: 5vh; 
+    margin-bottom: 60px;
 }
 
 /*credit: code for styling the form taken from https://www.javascripttutorial.net/sample/dom/form-validation/css/style.css and edited to fit project needs*/
@@ -228,27 +229,21 @@ p a:hover {
     box-sizing: border-box;
 }
 
-.supercontainer {
-    background-color: transparent;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    margin: 0;
+.frame {
+    padding:0 5px 40px 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .container2 {
     background-color: #fff;
-    padding: 1em;
+    padding: .5em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    margin-top: -80px;
 } 
 
 .form {
-    padding: 5px 10px;
+    padding: 5px 2px;
 }
 
 .form > h3 {
@@ -291,6 +286,16 @@ p a:hover {
 
 .form-field small {
     color: var(--error-color);
+}
+
+label {
+    display:inline;
+    clear:both;
+    padding-left: 10px;
+}
+
+.checkbox { 
+    margin-bottom: 15px; 
 }
 
 /* button */
@@ -434,19 +439,27 @@ p a:hover {
         color: #F16C16; 
     }
 
-    #myForm {
-        margin-left: 35vw;
+    #headingevents {
+        margin-top: 5vh; 
+        margin-bottom: 150px;
     }
-}
+   
 
-.container2 {
-    background-color: #fff;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
-    margin-top: -80px;
-} 
+    .frame {
+        padding:0 5px 40px 5px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .container2 {
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        width: 400px;
+        margin-top: -80px;
+    } 
+}
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     #certlogo {
@@ -461,8 +474,10 @@ p a:hover {
         margin-top: 15vh;
     }
 
-    #myForm {
-        margin-left: 10vw;
+    .frame {
+        padding:0 5px 40px 5px;
+        margin-left: 110px;
+        margin-right: 110px;
     }
 }
 
@@ -486,7 +501,23 @@ p a:hover {
         grid-gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: 300px;
-      }
     }
+
+    .frame {
+        padding:0 5px 40px 5px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .frame {
+        padding:0 5px 40px 5px;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+}
+
+
 
  

@@ -52,44 +52,46 @@
         </header> 
 
         <!--credit: code for burger menu taken from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse and edited slightly to fit project needs -->
-        <h1 style="margin-top: 5vh; margin-bottom: 2vh;">Exposición de seguridad para incendios y terremotos</h1>
+        <h1 id="headingevents">Exposición de seguridad para incendios y terremotos</h1>
 
-        <div class="supercontainer">
-            <div class="container2">
-                <form id="signup" class="form">
-                    <h2>Registracion de voluntarios</h2>
-                    <div class="form-field">
-                        <label for="fullname">Nombre:</label>
-                        <input type="text" name="fullname" id="fullname" autocomplete="off">
-                        <small></small>
-                    </div>
+        <div class="frame">
+            <div class="row">
+                <div class="container2 col-12">
+                    <form id="signup" class="form">
+                        <h2>Registración de voluntarios</h2>
+                        <div class="form-field">
+                            <label for="fullname">Nombre:</label>
+                            <input type="text" name="fullname" id="fullname" autocomplete="off">
+                            <small></small>
+                        </div>
         
-                    <div class="form-field">
-                        <label for="Email">Correo electrónico:</label>
-                        <input type="text" name="email" id="email" autocomplete="off">
-                        <small></small>
-                    </div>
+                        <div class="form-field">
+                            <label for="Email">Correo electrónico:</label>
+                            <input type="text" name="email" id="email" autocomplete="off">
+                            <small></small>
+                        </div>
 
-                    <h3>Papeles de voluntario</h3>
-                    <div>
-                        <input type="checkbox" id="greeter" name="greeter" value="Greeter">
-                        <label for="greeter"> Guardacoches</label><br>
-                        <input type="checkbox" id="docent" name="docent" value="Docent">
-                        <label for="docent"> Guía</label><br>
-                        <input type="checkbox" id="publicconcierge" name="publicconcierge" value="Public Concierge">
-                        <label for="publicconcierge"> Persona que da la bienvenida</label><br>
-                        <input type="checkbox" id="exhibitorconcierge" name="exhibitorconcierge" value="Exhibitor Concierge">
-                        <label for="exhibitorconcierge"> Ayudante de exposición</label><br>
-                        <input type="checkbox" id="prconcierge" name="prconcierge" value="PR Concierge">
-                        <label for="prconcierge"> Encargado de los medios de comunicación</label><br>
-                        <input type="checkbox" id="bagstuffer" name="bagstuffer" value="Go Bag stuffer">
-                        <label for="bagstuffer"> Llenar bolsitas para llevar</label><br>
-                        <input type="checkbox" id="crowdcontrol" name="crowdcontrol" value="Crowd Control Monitor">
-                        <label for="crowdcontrol"> Encargado de control del flujo de los espectadores</label><br>
-                    </div>
+                        <h3>Papeles de voluntario</h3>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="greeter" name="greeter" value="Greeter">
+                            <label for="greeter"> Guardacoches</label><br>
+                            <input class="checkbox" type="checkbox" id="docent" name="docent" value="Docent">
+                            <label for="docent"> Guía</label><br>
+                            <input class="checkbox" type="checkbox" id="publicconcierge" name="publicconcierge" value="Public Concierge">
+                            <label for="publicconcierge"> Portero</label><br>
+                            <input class="checkbox" type="checkbox" id="exhibitorconcierge" name="exhibitorconcierge" value="Exhibitor Concierge">
+                            <label for="exhibitorconcierge"> Ayudante de exposición</label><br>
+                            <input class="checkbox" type="checkbox" id="prconcierge" name="prconcierge" value="PR Concierge">
+                            <label for="prconcierge"> Encargado de RRPP</label><br>
+                            <input class="checkbox" type="checkbox" id="bagstuffer" name="bagstuffer" value="Go Bag stuffer">
+                            <label for="bagstuffer"> Llenar bolsitas para llevar</label><br>
+                            <input class="checkbox" type="checkbox" id="crowdcontrol" name="crowdcontrol" value="Crowd Control Monitor">
+                            <label for="crowdcontrol"> Control del flujo de las personas</label><br>
+                        </div>
         
-                    <button class="btn" type="submit">Registrar</button>
-                </form>
+                        <button class="btn" type="submit">Registrar</button>
+                    </form>
+                </div>
             </div>
         </div>
         
