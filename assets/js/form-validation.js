@@ -98,7 +98,6 @@ form.addEventListener('submit', function (e) {
         isEmailValid;
 
     /// submit to the server if the form is valid
-/*$("button").click(function(){*/
   if(isFormValid) {
       var vals = $("#signup").serialize();
       $.ajax({
