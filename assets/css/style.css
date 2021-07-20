@@ -33,6 +33,11 @@ h3 {
     color: #0098FF;
 }
 
+p {
+    font-family: "Muli", sans-serif;
+    font-size: 18px;
+}
+
 
 /*------------ HEADER ------------*/
 #wrapper {
@@ -108,9 +113,9 @@ h3 {
 .footer {
     width: 100%;
     color: #222222;
+    font-family: "Muli", sans-serif;
     font-size: 12px;
     font-weight: 400;
-    font-family: "Muli", sans-serif;
     text-align: center;
     position: relative;
 }
@@ -185,12 +190,28 @@ p a:hover {
 
 
 /*------------ EVENTS PAGE ------------*/
+/*credit: code for styling the form taken from https://www.javascripttutorial.net/sample/dom/form-validation/css/style.css and edited to fit project needs*/
 #headingevents {
     margin-top: 5vh; 
     margin-bottom: 60px;
 }
 
-/*credit: code for styling the form taken from https://www.javascripttutorial.net/sample/dom/form-validation/css/style.css and edited to fit project needs*/
+#roledescriptions {
+    margin-left: 4vw;
+}
+
+.list {
+    font-family: "Muli", sans-serif;
+}
+
+#descriptioncontainer {
+    margin-bottom: 100px;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
 
 :root {
     --error-color: #dc3545;
@@ -211,10 +232,9 @@ p a:hover {
 }
 
 .container2 {
-    background-color: #fff;
+    background-color: #f8f8ff;
     padding: .5em;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 } 
 
 .form {
@@ -462,7 +482,7 @@ img {
     }
 
     .container2 {
-        background-color: #fff;
+        background-color: #f8f8ff;
         padding: 1em;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

@@ -8,17 +8,17 @@
 [View deployed site here](https://katjacodes.github.io/northern-sonoma-CERT/)
 
 ## Project Description
-The online presence for Northern Sonoma CERT was created by Katja Schatte as a digital platform for Northern Sonoma CERT, a community emergency preparedness program located in northern Sonoma County in northern California, United States. 
+The online presence for Northern Sonoma County CERT, a community emergency preparedness program located in northern Sonoma County in northern California, United States, was created by Katja Schatte to help Northern Sonoma CERT. The current purpose of the website is to provide information about the upcoming Fire and Earthquake Safety Expo and allow both English- and Spanish-speaking community members to sign up as volunteer for the expo.
 
 Community Emergency Response Teams (CERT) are based on the National CERT Program, run by FEMA, the United States' Federal Emergency Management Agency. The local programs are administered by a local goverment agency, such as a police or fire department. The agency trains community members in basic disaster response skills, customized to the most prevalent emergencies in the respectie region. In California, these emergencies include earthquakes and wildfires. In the event of a major disaster, the trained volunteer emergency workers are equipped to support local first responders.
 
-At the moment, the Northern Sonoma CERT is looking specifically for a website to promote its upcoming Fire and Earthquake Safety Expo. However, in the future, the purpose of the website will shift to a more general representatio of the group and include annoucements of various upcoming events.
+At the moment, the Northern Sonoma CERT is looking specifically for a website to allow community members to access the flyer, sign up for its upcoming Fire and Earthquake Safety Expo, and share photos after the expo. However, in the future, the purpose of the website will shift to a more general representation of the program and include a general description of the program's purpose and announcements of various upcoming events.
 
 Currently, the general goals of the website are:
 * Provide information about the upcoming Fire and Earthquake Safety Expo
 * Allow community members to sign up for specific activties offered as part of the expo
 * A photo gallery where the site admins can upload pictures from the expo after the event (currently contains test images)
-* Provide all information and functionalities in both English and Spanish to make the website more widely accessible to the local community (The website creator is an English<>Spanish translator, interpreter, and copy writer.)
+* Provide all information and functionalities in both English and Spanish to make the website more widely accessible to the local community. (The website creator is an English<>Spanish translator, interpreter, and copy writer.)
 
 ## UX
 
@@ -26,28 +26,25 @@ Currently, the general goals of the website are:
 #### The core target audience of this organization is:
 * Residents in northern Sonoma County
 * Local community members of all ages
-* English- and Spanish speaking individuals
-* Community members who have heard about northern Sonoma CERT and visit the website to learn about upcoming activities
-* Community members who alredy know about the Fire and Earthquake Safety Expo and want to sign up for specific activities
+* English- and Spanish-speaking individuals
+* Community members who have heard about the Northern Sonoma County CERT program and visit the website to learn about upcoming activities
+* Community members who alredy know about the Fire and Earthquake Safety Expo and want to sign up to volunteer
 * Members of CERT programs in other parts of the country who are interested in learning more about the activities of this program
 
 #### Visitors to This Website Are Searching for:
-* More information about upcoming activities offered by Nortern Sonoma CERT
-* A way to register for activities offered as part of the Fire and Earthquake Safety Expo
-* After the event: Attendees who'd like to leave feedback
+* More information about the upcoming the Fire and Earthquake Safety Expo
+* A way to register as volunteers for the Fire and Earthquake Safety Expo
+* After the event: Share and look at photos
 
 #### Client Stories
-1. As a new visitor to the website, I want to have easy access to the music, so I can get a taste of the musical.
-2. As a new visitor to the website, I want find reader-friendly, well-organized information about the musical's content, background, and those involved in it.
-3. As a new visitor to the website, I want to find out how I can connect with the musical, especially on social media platforms I already use.
-4. As someone already familiar with the musical, I want to have a way to stay updated about recent developments related to the musical, including its new premier date.
-5. As someone already familiar with the musical, I want to know which businesses in my community financially support artistic production. (In progress)
-6. As a journalist focusing on local news and/or LGBTQIA issues, I want to be have access to background information about the musical and ways of contacting those involved.
+1. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer.
+2. As a new visitor to the website, I want to be able to easily accesss in either English or Spanish, depending on my preferred language.
+3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want o know what volunteer roles are available and sign up.
 
 ### Wireframe Mockups: 
-- [Home](assets/images/wireframes/#.png)
-- [Events](assets/images/wireframes/#.png)
-- [Gallery](assets/images/wireframes/#.png)
+- [Landing Page](assets/images/wireframes/#nosococertLandingPage.png)
+- [Events](assets/images/wireframes/nosococertEvents.png)
+- [Gallery](assets/images/wireframes/nosococertGallery.png)
 
 ## Features
 
