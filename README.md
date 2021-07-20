@@ -49,31 +49,19 @@ Currently, the general goals of the website are:
 ## Features
 
 #### Across Pages
-Each page features a responsive **navigation bar** with conventional placing of **logo** (top left).
+Each page features a responsive **navigation bar** with a **language selection menu** (top left) and an easily recognizable **Facebook icon** linking to the program's Facebook page (top right).
 Each page has a **footer** with **copyright information**. 
 
-Every page features a background created by the same artist who created to artwork for posters, flyers, and social media presence to make sure the website is on brand. 
+Every page features a background of a typical Sonoma County landscape (vineyards). The background image is cropped to make the content recognizable and aesthetically appealing across devices and screen orientations. 
 
 #### Home
-The home page features a background imagethat draws the vistor's attention to the central topic of the musical: rugby. The background image is cropped to make the content recognizable and aesthetically appealing across devices and screen orientations. To that end, there are three different versions of the image: a version for screens below 768px, a version for screens above 768px, and a version for phone and tablet screens in portrait orientation.
+The landing page features the offical CERT logo as the **hero image**. The percentage of the screen the hero image covers increases for screens 768px and above in potrait mode and decreases for screens 768px and above in landscape mode to make the page visually appealing and the content below the hero image easy to locate. Below the hero image, visitors can find direct links to **the event flyer** in pdf format and the volunteer sign-up form. Depending on the language in which the visitor is accesing the landing page, they will be directed to the flyer and the sign-up form in either English or Spanish. In the future, the links to the current event-related information will be replaced with more general information about the program and updated links to event information. Due to the evolving business needs of the client, the homepage is designed in a way that its content can easily be updated and adapted. 
 
-The **Jumbotron** on the homepage features the two major ways visitors can interact with the musical at this point: A direct **link to the contact form** and a **Spotify button** leading the visitor to the musical's Spotify. At the moment, the client is particularly interested in visitors visiting the musical's Spotify page to generate revenue and for visitors to have an easy way to stay up to date about new developments, including a new premier dates. Due to the evolving business needs of the client, the homepage is designed in a way that its content can easily be updated and adapted. 
+#### Events
+Currently, the events pages features **information about volunteer roles** at the upcoming Fire and Earthquake Safety Expo and **sign-up form** that transmits the information directly to a Google spreadsheet using the _API Spreadsheets_ API. The form is optimized to usable on mobile screens and adapts to tablet and computer screens (768px and above).
 
-#### About
-The About page features a brief synopsis and background information about the musical. The copy was provided by Sarah Julius, writer, composer and producer of _Great Big Rainbow World_. Visitors who prefer traditional writing to social media content or who are looking for a quick way to get an overview of the musical (e.g., for potential media requests), this page provides all the necessary information.
-
-#### Cast + Team and Individual Profile Pages
-The cast and teams page consists of **two responsive grids**: one featuring the **pictures and names** of the cast and one featuring the pictures and names of the creative team. The standard setting of the grid is two images per row. Above that, the grid features three images per row on screens 768px and above, four images per row on screens 992px and above, and six images per row on screens 1400px and above. In addition, the image size increases for screens 768px and above. The purpose of this structure is to provide a clean and organized overview of everyone involved, despite the relatively large number or cast and team members. 
-
-In addition, each image and name is clickable and **links** an **individual profile** featuring a profile image (larger for screens 992px and above, the cast or team member's name, pronouns, and role and a brief quote and personal information. The breakpoint for the styling of the quotes is 576px to strike a balance between readability and aesthetics. 
-
-All content for the grid and the individual pages was provided by the artists themselves.
-
-#### Sponsors
-Due to the tight deadline of the course, it was agreed upon with the client to post a **"Coming Soon"** disclaimer on the sponsors page for now. After the next update, the sponsors pags will be styled simiarly to the cast and team page, featuring the logos and names of all current sponsors.
-
-#### Contact
-The contact page consists of three sections. The first section features links to the musicals **Facebook** and **Instagram** presence. The second section consists of sign-up form for the **newsletter**, which requests the visitor's email address followed by a *Submit  button**.  Finally, the third section consists of message form requesting the visitor's name and email address followed by a box to leave a message and another **Submit button**.
+#### Gallery
+The gallery page currently features sample images demonstrating what the gallyery layout will look like once the event pictures get added to it. The standard setting of the **image grid** is one image per row. Above that, the grid features two images per row on screens 768px and above and three images per row on screens 1400px and above. The purpose of this structure is to allow users to clearly see the details of the images at first glance. In addition, the image gallery provides a **JavaScript-supported modal** that enlarge an image to full-screen size on click. After looking at the image, the visitor can return to the gallery by clicking ont the "x" in the upper right corner. Additionally, as soon as the menu bar is no longer visible on the screen, a **scroll-to-the-top button** appears in the lower right corner of the screen. On clicking it, the visitor is taken directly back to the top of the gallery.
 
  
 ### Existing Features
