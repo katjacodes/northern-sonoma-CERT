@@ -227,7 +227,6 @@ p a:hover {
 
 .form-field {
     margin-bottom: 5px;
-
 }
 
 .form-field label {
@@ -500,6 +499,7 @@ img {
         margin-top: 55px;
         width: 35%;
     }  
+}
 
  @media only screen and (min-width: 992px) {
     .container {
