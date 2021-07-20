@@ -4,7 +4,7 @@
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -32,7 +32,7 @@ for (let i = 0; i < imgs.length; i++) {
   imgs[i].onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
-  }
+  };
 }
 
 // Get the <span> element that closes the modal
@@ -41,4 +41,4 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};

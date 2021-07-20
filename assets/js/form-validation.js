@@ -21,7 +21,7 @@ const checkFullname = () => {
     } else if (!isBetween(fullname.length, min, max)) {
         showError(fullnameEl, `Name must be between ${min} and ${max} characters.`);
     } else if (!isFullnameValid(fullname)) {
-        showError(fullnameEl, 'Name can contain only letters.')
+        showError(fullnameEl, 'Name can contain only letters.');
     } else {
         showSuccess(fullnameEl);
         valid = true;
@@ -42,7 +42,7 @@ const checkEmail = () => {
     if (!isRequired(email)) {
         showError(emailEl, 'Email cannot be blank.');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
+        showError(emailEl, 'Email is not valid.');
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -125,7 +125,7 @@ const debounce = (fn, delay = 500) => {
         }
         // setup a new timer
         timeoutId = setTimeout(() => {
-            fn.apply(null, args)
+            fn.apply(null, args);
         }, delay);
     };
 };
