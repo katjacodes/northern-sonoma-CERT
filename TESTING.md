@@ -5,42 +5,38 @@
 [View website on GitHub Pages](https://katjacodes.github.io/northern-sonoma-CERT/)
 
 ## Testing
-- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
-- [W3C Markup Validation](https://validator.w3.org/)
-- [JSHint](https://jshint.com/)
-      - The developer used **W3C CSS Validation Service**, **W3C  Markup Validation Service**, and **JSHint** to check the validity of HTML, CSS, and JS code.
+
+### Automated Testing
+#### Validation Services
+- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to validate HTML.
+- [W3C Markup Validation](https://validator.w3.org/) was used to validate CSS.
+- [JSHint](https://jshint.com/) was used to validate JS.
+        - When running JSHint, the error ```unused variable``` appears for the function ```function topFunction()``` on line 18 in the [script.js](script.js). The reason for this error message is that JSHint evaluate the JS code independently from other files. However, this function gets called inline on line 16 of the [gallery.html](gallery.html) and the [gallery_es.html](gallery_es.html) files as part of the scroll-to-top button: ```<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>```. When evaluating this line of code together with the JS file, the error message disappears.
+        - Additionally, the error ```unused variable``` was caused by the jQuery symbol ```$``` on lines 104 and 105 of the [form-validation.js file](form-validation.js). Upon further research on [Stackoverflow](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined) and in the [JSHINT documentation](https://jshint.com/docs/options/), I discovered that JSHint does not recognize jQuery unless explicitly prompted. Based on these two sources, I prompted JSHint to do just that by including ```/*globals $:false */``` at the top of the [form-validation.js file](form-validation.js). This solved the issue.
 
 ### Client stories testing:
-The path through the website will vary depending on the visitor's interest and existing level of familiarity with the musical. Testing the client stories from the UX section provides further insights into the different paths taken by site visitors:
+The path through the website will vary depending on the visitor's interest, existing level of familiarity with the event, and preferred language. Testing the client stories from the UX section provides further insights into the different paths taken by site visitors:
 
-## Testing client stories from UX section of README.md
-1. As a new visitor to the website, I want to have easy access to the music, so I can get a taste of the musical.
-   1. A link in the shape of an easily recognizable Spotify logo on the homepage leads the visitor directly to the musical's Spotify presence.
-   2. The logo at the top of each page lead the visitor back to homepage.
-3. For those who become curious about the music after learning some more about the musical, there is a link to the musical's Spotify page embedded in the copy on the About page
+#### Testing client stories from UX section of README.md
+1. As a new visitor to the website, I want to be able to easily accesss information in either English or Spanish, depending on my preferred language.
+   1. A language selection menu located in a conventional location (upper left corner) with abbreviations for English and Spanish in each language (i.e., "EN" for English and "ES" for Español) allows the visitor to easily select their preferred language on any page of the website.
+   2. The language selection menu leads the visitor to the current page in the language the select.
+   3. In addition, the language selection menu changes the language of the navigation bar across pages.
     
-2. As a new visitor to the website, I want find reader-friendly, well-organized information about the musical's content, background, and those involved in it.
-   1. The navigation bar is structured based on the topics of most of interest to new visitors, moving from more general to more specific.
-   2. While visiting the Cast + Team page, the visitor can determine about which individuals they would like to learn more by clicking on the profile picture or the name.
-   3. The Cast + Team navigation bar button leads the visitor from the individual profile pages directly back to the overview page.
-   4. The About page contains information about both the background and the content of the musical without being overwhelming.
+2. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer.
+   1. Information about the upcoming Fire and Earthquake Safety Expo is accessible right from the landing page. Depending on the selected language, the visitor can access the event flyer and the volunteer sign-up form in their preferred language. The event flyer is a donwloadable pdf file that opens in a new tab.
+   2. The visitor can also access the volunteer role descriptions and sign-up form by selecting "Events" in the navigation bar.
+   3. The Facebook icon is located in the navigation bar in a conventional location (upper right corner), allowing the visitor to easily navigate to more information about CERT and the expo from any page. The Facebook url opens up in a new tab to allow the visitor to return to the CERT page easily.
 
-3. As a new visitor to the website, I want to find out where I can find more information about the musical, especially on social media platforms I already use.
-   1. Visitors can get to the Contact by selecting it in the navigation bar 
-   2. Additionally, there is a direct link form the homepage to the Contact page
-   3. On top of the Contact page, visitors find easily recongizable links to the musical's Facebook and Instagram presence
-   4. Additionally, visitors have the option to either subscribe to the newsletter or send a message directly to the musical team
 
-4. As someone already familiar with the musical, I want to have a way to stay updated about recent developments related to the musical, including its new premier date.
-   1. Visitors already familiar with the musical, can use the direct link to the Contact page provided on the homepage to sign up for the newsletter.
+3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want to know what volunteer roles are available and sign up.
+   1. Visitors interested in volunteering can access the sign-up form either by clicking on "Events" in the navigation bar or by clicking on the direct link on the landing page.
+   2. Short descriptions of the available volunteer roles are provided at the top of the sign-up form in either English or Spanish, depending on the selected language.
+   3. The testing form cannot be submitted unless the vistor provided a name, a valid email address, and selected at least one volunteer role.
 
-5. As someone already familiar with the musical, I want to have a way to stay updated about recent developments related to the musical, including its new premier date.
-   1. The navigation bar item "Sponsors" leads to a full ist of local businesses and organizations supporting the musical financially.
-   (2. On request of the client, no direct links to the sponsors websites were included.)
-
-6. As a journalist focusing on local news and/or LGBTQIA issues, I want to be have access to background information about the musical and ways of contacting those involved.
-   1. The About page provides a summary of both the musical's background and content and links to its musicals for interested journalists to get a first impression of the musical.
-   2. To let journalists know to whom to address their message on the contact page, the copy on the About page includes the name of the writer, composer, and producer of the musical.
+4. As a local beat reporter, I want to have acess to basic information regarding the Fire and Earthquake Safety Expo, including date, time, and where to find additional information.
+   1. Information about the upcoming Fire and Earthquake Safety Expo is accessible right from the landing page. Depending on the selected language, the visitor can access the event flyer in their preferred language. The event flyer is a donwloadable pdf file that opens in a new tab.
+   3. The Facebook icon is located in the navigation bar in a conventional location (upper right corner), allowing the visitor to easily navigate to more information about CERT and the expo from any page and reach out to the event organizers with more questions. The Facebook url opens up in a new tab to allow the visitor to return to the CERT page easily.
 
 ### Manual (logical) testing of all elements and functionality on every page.
 

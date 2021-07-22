@@ -1,3 +1,5 @@
+/*globals $:false */
+
 /*------------ EVENTS PAGES ------------*/
 /* credit: code for sign-up form taken from https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/ and https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6 and edited to fit project needs */
 
