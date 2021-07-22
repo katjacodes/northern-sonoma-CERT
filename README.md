@@ -145,10 +145,10 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
 4. Copy the API url for the spreadsheet and paste it into line 104 of the [form validation JavaScript file](form-validation.js), as demonstrated below:
 
 ```// submit to the server if the form is valid```\
-  ```if(isFormValid) {```\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```if(isFormValid) {```\
      ``` var vals = $("#signup").serialize();```\
       ```$.ajax({```\
-         ```url: "[INSERT API URL HERE]]",```\  
+         ```url: "[INSERT API URL HERE]]",```  
          ```method: "POST",```\
          ```data: vals,```\
          ```success: function(){```\
