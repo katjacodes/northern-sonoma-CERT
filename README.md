@@ -20,6 +20,7 @@ Currently, the general goals of the website are:
 * A photo gallery where the site admins can upload pictures from the expo after the event (currently contains test images)
 * Provide all information and functionalities in both English and Spanish to make the website more widely accessible to the local community. (The website creator is an English<>Spanish translator, interpreter, and copy writer.)
 
+
 ## UX
 
 ### Core Target Audience
@@ -47,8 +48,8 @@ Currently, the general goals of the website are:
 - [Events](assets/images/wireframes/nosococertEvents.png)
 - [Gallery](assets/images/wireframes/nosococertGallery.png)
 
-## Features
 
+## Features
 #### Across Pages
 Each page features a responsive **navigation bar** with a **language selection menu** (top left) and an easily recognizable **Facebook icon** linking to the program's Facebook page (top right).
 Each page has a **footer** with **copyright information**. 
@@ -64,7 +65,6 @@ Currently, the events pages features **information about volunteer roles** at th
 #### Gallery
 The gallery page currently features sample images demonstrating what the gallyery layout will look like once the event pictures get added to it. The standard setting of the **image grid** is one image per row. Above that, the grid features two images per row on screens 768px and above and three images per row on screens 1400px and above. The purpose of this structure is to allow users to clearly see the details of the images at first glance. In addition, the image gallery provides a **JavaScript-supported modal** that enlarge an image to full-screen size on click. After looking at the image, the visitor can return to the gallery by clicking ont the "x" in the upper right corner. Additionally, as soon as the menu bar is no longer visible on the screen, a **scroll-to-the-top button** appears in the lower right corner of the screen. On clicking it, the visitor is taken directly back to the top of the gallery.
 
- 
 ### Existing Features
 - Language Selection Menu - Exists on [every page](index.html) and allows all users to selct their preferred language on any page. Clicking a language option sends the user to the current page in the selected language and displays the navigatio bar in the selected language.
 - Header Navigation Bar - Exists on [every page](index.html) and allows all users to easily navigate all the website's pages and find what they are looking for quickly, including the CERT program's **social media presence on Facebook**.
@@ -160,8 +160,8 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
       ```});```
 
 
-## Credits
 
+## Credits
 ### Content
 - The event flyers in English and Spanish and the English volunteer role titles and descriptions were provided by Geoff Peters. 
 
@@ -171,16 +171,7 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
 - HTML, CSS, and JS code for the image gallery originally taken from [W3 Schools](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html) and edited to fit project needs.
 - HTML, CSS, and JS code for the scroll-to-top button originally taken from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top) and edited slightly to fit project needs.
 
-
-
-
-
-- CSS code to align and size logo and navbar was originally taken from a post on [Stackoverflow](https://stackoverflow.com/questions/53171559/navbar-smaller-than-navbar-brand) and then edited.
-- CSS  code to center text in the footer was taken from [W3 Schools](https://www.w3schools.com/css/css_align.asp).
-- CSS code to style quotes on the individual profile pages was original taken from Jonathan Clift's profile on [Codepen](https://codepen.io/cliftwalker/pen/XJaEXY) and then edited.
-- The design of the Cast + Team page was inspired by the [Vera Institute](https://www.vera.org/about/peoplehttps://www.vera.org/about/people). However, no code was taken from the site.
-
 ### Acknowledgements
-- I got the opportunity to build a website for a real-world project from Sarah Julius.
-- Code Institute tutors were helpful and guided me in the right direction on two separate occasions when I got stuck did not know how to fix my CSS.
-- My Code Institute mentor, Sebastian Immel provided helpful feedback regarding the behavior of my navar, which I will implment as part of the next version of the site. (See **Features to Implement in the Future** section for details.)
+- I got the opportunity to build a website for a real-world project from Geoff Peters.
+- My Code Institute mentor, Sebastian Immel provided helpful feedback regarding the behavior when I got stuck with my sign-up form. Thanks to his guidance, I tried coding the form validation adn submission pieces separately, which eventually solved my issue. (See [TESTING.md file](Testing.md) for details.)
+- Dominik Habersack helped me located a bug in my form submission code, which prevented the sign-up form from submitting. (See [TESTING.md file](Testing.md) for details.)
