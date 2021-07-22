@@ -166,7 +166,15 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
 - The event flyers in English and Spanish and the English volunteer role titles and descriptions were provided by Geoff Peters. 
 
 ### Code
-- HTML code for burger menu was original taken from [W3 Schools](https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse) and then edited.
+- HTML and JS code for the burger menu was originally taken from [W3 Schools](https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse) and then edited.
+- HTML, CSS, and JS code for the sign-up form was originally taken from [JavaScript TUTORIAL](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) and [Love Spreadsheets](https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6) and substantially edited to fit project needs
+- HTML, CSS, and JS code for the image gallery originally taken from [W3 Schools](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html) and edited to fit project needs.
+- HTML, CSS, and JS code for the scroll-to-top button originally taken from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top) and edited slightly to fit project needs.
+
+
+
+
+
 - CSS code to align and size logo and navbar was originally taken from a post on [Stackoverflow](https://stackoverflow.com/questions/53171559/navbar-smaller-than-navbar-brand) and then edited.
 - CSS  code to center text in the footer was taken from [W3 Schools](https://www.w3schools.com/css/css_align.asp).
 - CSS code to style quotes on the individual profile pages was original taken from Jonathan Clift's profile on [Codepen](https://codepen.io/cliftwalker/pen/XJaEXY) and then edited.
