@@ -104,7 +104,7 @@ The gallery page currently features sample images demonstrating what the gallyer
     - This project uses **Google PageSpeed Insights** to optimize loading time.
 
 ## Testing 
-Testing information can be found in separate [TESTING.md file](TESTING.md)
+Testing information can be found in a separate [TESTING.md file](TESTING.md).
 
 ## Deployment
 This project was developed using the [Gitpod](https://gitpod.io), committed to git, and pushed to GitHub using the Gitpod terminal. 
