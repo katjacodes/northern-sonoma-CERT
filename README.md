@@ -144,7 +144,7 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
 3. On the dashboard, click on the **Google Sheets** button, sign in with your Gmail account, and select the spreadsheet you created to hold the form data.
 4. Copy the API url for the spreadsheet and paste it into line 104 of the [form validation JavaScript file](form-validation.js), as demonstrated below:
 
-```// submit to the server if the form is valid```
+```// submit to the server if the form is valid&nbsp;```
   ```if(isFormValid) {```
      ``` var vals = $("#signup").serialize();```
       ```$.ajax({```
