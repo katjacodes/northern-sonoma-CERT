@@ -112,7 +112,7 @@ This project was developed using the [Gitpod](https://gitpod.io), committed to g
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/katjacodes/northern-sonoma-CERT), the following process was completed: 
 1. Log into GitHub. 
 2. Klick on the account avatar in the top right corner and select "Your repositories" from the dropdown menu.
-3. From the list of repositories, select **gbrw**.
+3. From the list of repositories, select **northern-sonoma-CERT**.
 4. From the menu bar at the top of the page, select **Settings**.
 5. In the menu bar on the left side of the screen, select the second menu item from the bottom, "Pages."
 6. In the **Source** section, select **Master Branch** from the dropdown menu, then click on **Save**.
@@ -158,7 +158,6 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```alert("There was an error");```\
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```}```\
       ```});```
-
 
 
 ## Credits
