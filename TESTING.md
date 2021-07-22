@@ -11,7 +11,9 @@
 - [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to validate HTML.
 - [W3C Markup Validation](https://validator.w3.org/) was used to validate CSS.
 - [JSHint](https://jshint.com/) was used to validate JS.
+
         - When running JSHint, the error ```unused variable``` appears for the function ```function topFunction()``` on line 18 in the [script.js](script.js). The reason for this error message is that JSHint evaluate the JS code independently from other files. However, this function gets called inline on line 16 of the [gallery.html](gallery.html) and the [gallery_es.html](gallery_es.html) files as part of the scroll-to-top button: ```<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>```. When evaluating this line of code together with the JS file, the error message disappears.
+        
         - Additionally, the error ```unused variable``` was caused by the jQuery symbol ```$``` on lines 104 and 105 of the [form-validation.js file](form-validation.js). Upon further research on [Stackoverflow](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined) and in the [JSHINT documentation](https://jshint.com/docs/options/), I discovered that JSHint does not recognize jQuery unless explicitly prompted. Based on these two sources, I prompted JSHint to do just that by including ```/*globals $:false */``` at the top of the [form-validation.js file](form-validation.js). This solved the issue.
 
 ### Client stories testing:
