@@ -12,7 +12,7 @@ The online presence for Northern Sonoma County CERT, a community emergency prepa
 
 Community Emergency Response Teams (CERT) are based on the National CERT Program, run by FEMA, the United States' Federal Emergency Management Agency. The local programs are administered by a local goverment agency, such as a police or fire department. The agency trains community members in basic disaster response skills, customized to the most prevalent emergencies in the respectie region. In California, these emergencies include earthquakes and wildfires. In the event of a major disaster, the trained volunteer emergency workers are equipped to support local first responders.
 
-At the moment, the Northern Sonoma CERT is looking specifically for a website to allow community members to access the flyer, sign up for its upcoming Fire and Earthquake Safety Expo, and share photos after the expo. However, in the future, the purpose of the website will shift to a more general representation of the program and include a general description of the program's purpose and announcements of various upcoming events.
+At the moment, the Northern Sonoma CERT is looking specifically for a website to allow community members to access the flyer, sign up for its upcoming Fire and Earthquake Safety Expo, and share photos after the expo. The program's primary mode of interaction and communication with the community is currently its Facebook page. A link to it features promintently on every page as part of the navigation bar. However, in the future, the purpose of the website will shift to a more general representation of the program and include a general description of the program's purpose and announcements of various upcoming events.
 
 Currently, the general goals of the website are:
 * Provide information about the upcoming Fire and Earthquake Safety Expo
@@ -37,9 +37,10 @@ Currently, the general goals of the website are:
 * After the event: Share and look at photos
 
 #### Client Stories
-1. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer.
-2. As a new visitor to the website, I want to be able to easily accesss in either English or Spanish, depending on my preferred language.
-3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want o know what volunteer roles are available and sign up.
+1. As a new visitor to the website, I want to be able to easily accesss information in either English or Spanish, depending on my preferred language.
+2. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer.
+3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want to know what volunteer roles are available and sign up.
+4. As a local beat reporter, I want to have acess to basic information regarding the Fire and Earthquake Safety Expo, including date, time, and where to find additional information.
 
 ### Wireframe Mockups: 
 - [Landing Page](assets/images/wireframes/#nosococertLandingPage.png)
@@ -65,21 +66,17 @@ The gallery page currently features sample images demonstrating what the gallyer
 
  
 ### Existing Features
-- Header Logo - Exists on [every page](index.html) and allows all users to easily recognise the business brand. Clicking the logo returns users to the home page as they would expect.
-- Header Navigation Bar - Exists on [every page](index.html) and allows all users to easily navigate all the website's pages and find what they are looking for quickly.
+- Language Selection Menu - Exists on [every page](index.html) and allows all users to selct their preferred language on any page. Clicking a language option sends the user to the current page in the selected language and displays the navigatio bar in the selected language.
+- Header Navigation Bar - Exists on [every page](index.html) and allows all users to easily navigate all the website's pages and find what they are looking for quickly, including the CERT program's **social media presence on Facebook**.
 - Footer Copyright Info - Exists on [every page](index.html) and protects business copyright.
-- [About Page](about.html) - Allows potential clients to connect with the artist without overloading them with information.
-- [Cast + Team Page](castandteam.html)
-- Social Media links - Linking to the musical's presence on Spotify, Facebook, and Instagram
+- [Landing Page in English](index.html) and [Landing Page in Spanish](index_es.html) - Allows interested community members to see right away whose page they have landed on and where to find information about the upcoming expo.
+- [Events Page in English](events.html) and [Events Page in Spanish](events_es.html) - Provides information about the different volunteer roles available during the Fire and Earthquake Safety Expo at a glance followed by a **sign-up form**.
+- [Gallery Page in English](gllery.html) and [Gallery Page in Spanish](gallery_es.html) - Will display images from the expo after the event with the **option for visitors to enlarge them on cklick**.
 
 ### Features to Implement in Future
-- Restyling of navbar. To keep menu items from moving to the left when one item is clicked. - More research needed.
-- _Functioning_ [Contact Form](contact.html) - Allows potential clients to ask questions, and/or make the first step in their ordering process. - Backend functionality needed. Will be provided by the client's web host once the page is deployed there.
-- Add CAPTCHA to contact form - Helps protect the contact form from malicious use, i.e., spam - JavaScript needed
-- [Sponsors page](sponsors.html) - Features all businesses and organizations currently supporting the musical.
-- Improve loading speed on mobile devices - Optimizes experience for visitors using their mobile device to access the page. - Further tinkering with image files, sripts, and stylesheents necessary.
-- Improve SEO optimization - Increases visitor stream to the page. - Additional meta tags and editing the copy provided by the client.
-- Ticket purchase functionality - Backend skills needed
+- Contact form. - Client is currently using his personal email address and will set up business email address to liink the form to in the future.
+- Event evaluation form. - Content will be provided by the client after the expo.
+- Program description and overview. - Still being developed.
 
 
 ## Technologies Used
@@ -92,9 +89,11 @@ The gallery page currently features sample images demonstrating what the gallyer
 - [Google Fonts](https://fonts.google.com/)
     - This project uses **Google fonts** to style the website fonts.
 - [jQuery](https://jquery.com/)
-    - This project uses **jQuery** to reference Javascript needed for the responsive navbar.
+    - This project uses **jQuery** to reference Javascript needed for the responsive navbar and sign-up form submission functionality.
 - [Popper.js](https://popper.js.org/)
     - This project uses **Popper.js** to reference Javascript needed for the responsive navbar.
+- [API Spreadsheets](https://www.apispreadsheets.com)
+    - This project uses **API Spreadsheets** to connect the sign-up form to Google spreadsheets via an API.
 - [ColorSpace](https://mycolor.space)
     - This project uses **ColorSpace** to determine font colors that go well together.
 - [WAVE](https://wave.webaim.org)
@@ -110,7 +109,7 @@ Testing information can be found in separate [TESTING.md file](TESTING.md)
 ## Deployment
 This project was developed using the [Gitpod](https://gitpod.io), committed to git, and pushed to GitHub using the Gitpod terminal. 
 
-To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/katjacodes/gbrw), the following process was completed: 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/katjacodes/northern-sonoma-CERT), the following process was completed: 
 1. Log into GitHub. 
 2. Klick on the account avatar in the top right corner and select "Your repositories" from the dropdown menu.
 3. From the list of repositories, select **gbrw**.
@@ -122,7 +121,7 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 At the moment of submitting this Milestone project the Development Branch and Master Branch are identical. 
 
 ### How to Run This Project Locally
-To clone this project into Gitpod you will need a Github account. [Create a Github account here](https://github.com/)
+To clone this project into Gitpod you will need a Github account, and API Spreadsheets account, and a Gmail account. You can [create a Github account here](https://github.com/), [create an API Spreadsheets account here.](https://www.apispreadsheets.com/), and [create a Gmail account here](https://mail.google.com/).
 
 Then follow these steps:
 1. Log into [Gitpod](https://gitpod.com) with your gitpod account.
@@ -139,13 +138,33 @@ To work on the project code within a local IDE such as VSCode, Sublime Text, etc
 6. Type ```git clone```, and then paste the URL you copied in Step 4.
 7. Press Enter for your local clon to be created.
 
+You will need to create a Google spreadsheet and an API Spreadsheets acount to create your own sign-up form. To do so, follow theses steps:
+1. Create a Google spreadsheet whose colum titles exactly match the name atribute of your form <input> tags. 
+2. Create an API Spreadsheets account or log into yours if you already have one.
+3. On the dashboard, click on the **Google Sheets** button, sign in with your Gmail account, and select the spreadsheet you created to hold the form data.
+4. Copy the API url for the spreadsheet and paste it into line 104 of the [form validation JavaScript file](form-validation.js), as demonstrated below:
+
+```// submit to the server if the form is valid``
+  ```if(isFormValid) {```
+     ``` var vals = $("#signup").serialize();```
+      ```$.ajax({```
+         ```url: "[INSERT API URL HERE]]",```  
+         ```method: "POST",```
+         ```data: vals,```
+         ```success: function(){```
+              ```alert("Form data submitted");```
+          ```},```
+          ```error: function(){```
+              ```alert("There was an error");```
+          ```}```
+      ```});```
+  ```}```
+
+
 ## Credits
 
 ### Content
-- The text for the About page was written by Sarah Julius. Each artist and member of the creative time provided their own bio and headshot.
-
-### Media
-- The background images and logo were created by Alexis Politz.
+- The event flyers in English and Spanish and the English volunteer role titles and descriptions were provided by Geoff Peters. 
 
 ### Code
 - HTML code for burger menu was original taken from [W3 Schools](https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse) and then edited.
