@@ -98,20 +98,20 @@ form.addEventListener('submit', function (e) {
         isEmailValid;
 
     /// submit to the server if the form is valid
-  if(isFormValid) {
-      var vals = $("#signup").serialize();
-      $.ajax({
-          url: "https://api.apispreadsheets.com/data/15450/",  
-          method: "POST",
-          data: vals,
-          success: function(){
-              alert("Form data submitted");
-          },
-          error: function(){
-              alert("There was an error");
-          }
-      });
-  }
+    if(isFormValid) {
+        var vals = $("#signup").serialize();
+        $.ajax({
+            url: "https://api.apispreadsheets.com/data/15450/",  
+            method: "POST",
+            data: vals,
+            success: function(){
+                alert("Form data submitted");
+            },
+            error: function(){
+                alert("There was an error");
+            }
+        });
+    }
 }); 
 
 
