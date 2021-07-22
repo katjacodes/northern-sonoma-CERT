@@ -57,60 +57,75 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 #### Home Page
 1. Navigation bar & homepage background image
+
    1. Go to the "Home" page from a desktop.
+
    2. Using both Firefox Developer Tools and different devices: Look at the homepage on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that
+
       - The navigation bar turns into a burger menu when navigating to the homepage on a phone screen.
+
       - The background image gets resized and cropped in a way that its content remains recognizable and aesthetically pleasing.
-   3. Make sure the burger menu pushes down the content when opened. _During testing, the menu would initially overlay the remaining website content. This turned out to be due to a typo in the linked script._
-   4. Click on the logo in the navigation bar and verify that it links to the homepage. 
-   5. Click on each navigation menu item and verify that it links to the correct page.
-   6. Repeat steps 4 and 5 on phone and a tablet.
 
-2. Jumbotron
-   1. Click on link to Contact page to verify it links to the Contact page.
-   2. Click on the  Spotify logo to verify it links to the musical's Spotify page.
+   3. Make sure the burger menu pushes down the content when opened. 
 
-### About page
-1. Navigation bar:
-   1. Repeat verification steps for the navigation bar on the home page.
+   4. Click on each navigation menu item and verify that it links to the correct page.
 
-2.  Page content
-    1. Reduce and expand width of window to verify that the text behaves the way expected
-    2. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that
-       - The text arrangement looks good on all device widths.
-       - The margins adjust depending on the device width for optimal use of space.
-    3. Click on the link to the musical's Spotify profile embedded in the text to verify it links to the correct page.
+   5. Click on the Facebook icon and verify that it links to the program's Facebook page.
 
-### Cast + team page & individual profile pages
-1. Navigation bar
-   1. Repeat verification steps for the navigation bar on the home page.
+   6. Click on "ES" in the language selection meanu and verify to it links to the landing page in Spanish and changes the navigation bar into Spanish. Then, click on "EN" and verify that you return to the landing page in English and the English navigation bar.
 
-2. Page content
-   1. Click on each profile image to verify it links to the correct profile.
-   2. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that the images rearrange with increasing/decreasing screen width. _During testing, the imgages did not rearrange. Researching the reason for this, I found out that all of them need to be wrapped into on single row to be fully responsive._
+   7. On both the English and the Spanish landing page, click on the link to the event description and verify that the pdf flyer opens up in a new tab and in the correct language.
 
-3. Individual profile pages
-   1. Navigation bar:
-      1. Repeat verification steps for the navigation bar on the home page.
+   8. On both the English and the Spanish language page, click on the link to the volunteer sign-up form and verify that you are directed to the Events page in the correct language.
 
-   2. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that
-      - The text arrangement looks good on all device widths.
-      -  The size of the profile image increase on tables and desktop screens.
-      -  The styling of the quotes changes with increasing/decreasing screen width.
+   9. Repeat steps 2 through 6 on the Events and the Gallery pages.
 
-### Contact page
-1. Navigation bar:
-   1. Repeat verification steps for the navigation bar on the home page.
+### Events page
+1. Navigation bar and language selector:
 
-2. Page content
-   1. Click on the  Facebook and Instagram logos to verify it links to the musical's social media presences. 
-   2. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that
-      - The text arrangement looks good on all device widths.
-      - The margins and width text input fields adjust depending on the device width for optimal use of space.
-   3. NOTE: The form is not functional while the website it deployed on GitHub. It will be once the client deploys it using Squarespace hosting.
+   1. Repeat verification steps for the navigation bar and the language selector on the home page.
 
+2. Reduce and expand width of window to verify that the size of the form adjusts to the screen size and continues to look aesthetically pleasing.
+
+3. Using both Firefox Developer Tools and different devices: Look at the Events Page on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify the same as in step 2.
+
+4. Sign-up form:
+
+   1. Fill out the submission form by answering all the questions in ways that resemble real answers--i.e. name and email address in conventional formatting, at least one checkbox checked--and verify that 
+
+      - the borders of the name and email address fields turn green.
+      - the "Form data was submitted" message appears.
+
+   2. Check the Google spreadsheet to see if the form data was recorded correctly.
+
+   3. Respond to the sign-up questions in ways that should not pass the validation process:
+
+      - Enter a name cotaining special characters.
+      - Enter an email address without an ```@```.
+      - Do not select any checkboxes.
+
+      and verify that the the borders of the name and email address fields turn red and an error message is displayed below them and that the form cannot be submitted.
+
+   4. Repeat steps 1 through 3 filling out the Spanish sign-up form.
+
+### Gallery Page
+1. Navigation bar and language selector:
+
+   1. Repeat verification steps for the navigation bar and the language selector on the home page.
+
+2. Reduce and expand width of window to verify that the text behaves the way expected: one image per row on screens below 768px, two image per row on screesn below 1400px, and three images per row on larger screens.
+
+3. Using both Firefox Developer Tools and different devices: Look at the Gallery Page on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that the image spacing looks good on all device widths.
+
+4. Hover over the images to verify that the images are sliglty enlarge upon hovering over them.
+
+5. Click on several images to verify that the modal opens, displays the image correctly, and closes upon clicking o the "x" in the upper right corner.
+
+6. Scroll down to verify that the scroll-to-top button appears and click it to verify it works correctly.
+      
 ###  Footer 
 1. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that the footer is sticky on all pages and across devices. 
+
 2. Click on the Letters and Bytes link to verify it leads to the developer's website  on all pages.
 
 ## Further testing: 
