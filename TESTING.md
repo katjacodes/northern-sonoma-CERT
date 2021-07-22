@@ -20,15 +20,16 @@
 The path through the website will vary depending on the visitor's interest, existing level of familiarity with the event, and preferred language. Testing the client stories from the UX section provides further insights into the different paths taken by site visitors:
 
 #### Testing client stories from UX section of README.md
-**1. As a new visitor to the website, I want to be able to easily accesss information in either English or Spanish, depending on my preferred language.**
+_1. As a new visitor to the website, I want to be able to easily accesss information in either English or Spanish, depending on my preferred language._
 
    1. A language selection menu located in a conventional location (upper left corner) with abbreviations for English and Spanish in each language (i.e., "EN" for English and "ES" for Español) allows the visitor to easily select their preferred language on any page of the website.
 
    2. The language selection menu leads the visitor to the current page in the language the select.
 
    3. In addition, the language selection menu changes the language of the navigation bar across pages.
-    
-**2. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer.**
+   
+
+_2. As a new visitor to the website, I want to have easy access to more information about the upcoming Fire and Earthquake Safety Expo and potentially sign up to volunteer._
 
    1. Information about the upcoming Fire and Earthquake Safety Expo is accessible right from the landing page. Depending on the selected language, the visitor can access the event flyer and the volunteer sign-up form in their preferred language. The event flyer is a donwloadable pdf file that opens in a new tab.
 
@@ -37,7 +38,7 @@ The path through the website will vary depending on the visitor's interest, exis
    3. The Facebook icon is located in the navigation bar in a conventional location (upper right corner), allowing the visitor to easily navigate to more information about CERT and the expo from any page. The Facebook url opens up in a new tab to allow the visitor to return to the CERT page easily.
 
 
-**3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want to know what volunteer roles are available and sign up.**
+_3. As someone already familiar with the Fire and Earthquake Safety Expo and interested in volunteering, I want to know what volunteer roles are available and sign up._
 
    1. Visitors interested in volunteering can access the sign-up form either by clicking on "Events" in the navigation bar or by clicking on the direct link on the landing page.
 
@@ -45,7 +46,8 @@ The path through the website will vary depending on the visitor's interest, exis
 
    3. The testing form cannot be submitted unless the vistor provided a name, a valid email address, and selected at least one volunteer role.
 
-**4. As a local beat reporter, I want to have acess to basic information regarding the Fire and Earthquake Safety Expo, including date, time, and where to find additional information.**
+
+_4. As a local beat reporter, I want to have acess to basic information regarding the Fire and Earthquake Safety Expo, including date, time, and where to find additional information._
 
    1. Information about the upcoming Fire and Earthquake Safety Expo is accessible right from the landing page. Depending on the selected language, the visitor can access the event flyer in their preferred language. The event flyer is a donwloadable pdf file that opens in a new tab.
    
