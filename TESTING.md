@@ -167,4 +167,6 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 ### Form submission no longer working
 - After working for a while, form submission all of a sudden stopped working. At the time, my JS code looked like this:
 
-[Form validation and submisson code July 12, 2021](assets/images/formSubmission210712.png)
+<div align="left">
+    <img src="assets/images/formSubmission210712.png" alt="JavaScript form submission code as of July 12, 2021"/>
+</div>
