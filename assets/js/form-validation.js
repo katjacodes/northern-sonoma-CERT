@@ -91,10 +91,13 @@ function isChecked(){
     var greeter = document.getElementById('greeter').checked;
     var docent = document.getElementById('docent').checked;
     var publicconcierge = document.getElementById('publicconcierge').checked;
-    var  exhibitorconcierge = document.getElementById('exhibitorconcierge').checked;
+    var exhibitorconcierge = document.getElementById('exhibitorconcierge').checked;
+    var prconcierge = document.getElementById('prconcierge').checked;
+    var bagstuffer = document.getElementById('bagstuffer').checked;
+    var crowdcontrol = document.getElementById('crowdcontrol').checked;
     
-    if(greeter==false && docent == false && publicconcierge==false && exhibitorconcierge==false){
-    alert('Please select a country!');
+    if(greeter==false && docent == false && publicconcierge==false && exhibitorconcierge==false  && prconcierge == false && bagstuffer == false && crowdcontrol == false){
+    alert('Please select at least one volunteer role');
     return false;
     }
     else{
