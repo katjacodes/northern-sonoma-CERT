@@ -80,7 +80,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
    9. Repeat steps 2 through 6 on the Events and the Gallery pages.
 
-### Events page
+#### Events page
 1. Navigation bar and language selector:
 
    1. Repeat verification steps for the navigation bar and the language selector on the home page.
@@ -108,7 +108,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
    4. Repeat steps 1 through 3 filling out the Spanish sign-up form.
 
-### Gallery Page
+#### Gallery Page
 1. Navigation bar and language selector:
 
    1. Repeat verification steps for the navigation bar and the language selector on the home page.
@@ -123,10 +123,47 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 6. Scroll down to verify that the scroll-to-top button appears and click it to verify it works correctly.
       
-###  Footer 
+####  Footer 
 1. Using both Firefox Developer Tools and different devices: Look at the About on a desktop screen, a tablet screen, and a phone screen (both in portrait and landscape orientation) to verify that the footer is sticky on all pages and across devices. 
 
 2. Click on the Letters and Bytes link to verify it leads to the developer's website  on all pages.
 
-## Further testing: 
+### Further testing: 
 1. Asked friends, family members, and other Code Institute students to look at the site on their devices and report any issues they find. 
+
+### Bugs discovered
+#### Form data submitted incompletely to the Google spreadsheet
+- After working initially, only the email address got recorded in the spreadsheet, but the name information was missing.
+
+- After reviewing my code again various times, I noticed that I had changed the ```name``` attribute on the ```<input>``` tag of the name field wihouth updating the column name in the Google spreadsheet.
+
+- Updating the column name as well solved the issue.
+
+#### Gallery test images appeared in their original sizes
+- After adding the test images to the photo gallery I noted that they were giant.
+
+- The solution to the issue was to hard-code the image size in the CSS file. 
+
+-I tried different ways, also taking into account the with/height ratio of different images. Eventually I went with a solution that fit the image into the container and cropped it to show its full width and adjust the height accordingly.
+
+#### Gallery modal not working
+- I started out with code found on [W3 Schools](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html) and gradualle edited it to fit project needs. However, at some point, the modal stopped working.
+
+- After continuing to review my code and experiment for a bit, I realized that I did not include captions in the enlarged images in the modal. However, showing captions on click was still part of the JS function. This caused the entire function not work:
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+

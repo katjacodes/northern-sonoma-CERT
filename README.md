@@ -139,7 +139,7 @@ To work on the project code within a local IDE such as VSCode, Sublime Text, etc
 7. Press Enter for your local clon to be created.
 
 You will need to create a Google spreadsheet and an API Spreadsheets acount to create your own sign-up form. To do so, follow theses steps:
-1. Create a Google spreadsheet whose colum titles exactly match the name atribute of your form <input> tags. 
+1. Create a Google spreadsheet whose colum titles exactly match the ```name``` attribute of your form ```<input>``` tags. 
 2. Create an API Spreadsheets account or log into yours if you already have one.
 3. On the dashboard, click on the **Google Sheets** button, sign in with your Gmail account, and select the spreadsheet you created to hold the form data.
 4. Copy the API url for the spreadsheet and paste it into line 104 of the [form validation JavaScript file](form-validation.js), as demonstrated below:
