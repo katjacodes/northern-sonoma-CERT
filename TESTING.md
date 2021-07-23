@@ -147,23 +147,18 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 -I tried different ways, also taking into account the with/height ratio of different images. Eventually I went with a solution that fit the image into the container and cropped it to show its full width and adjust the height accordingly.
 
 #### Gallery modal not working
-- I started out with code found on [W3 Schools](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html) and gradualle edited it to fit project needs. However, at some point, the modal stopped working.
+- I started out with code found on [W3 Schools](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html) and gradualle edited it to fit project needs. 
 
-- After continuing to review my code and experiment for a bit, I realized that I did not include captions in the enlarged images in the modal. However, showing captions on click was still part of the JS function. This caused the entire function not work:
+- Since the example code worked only with one image, JavaScript accessed the image to enlarge it using  ```getElementById```.
 
-<!-- Trigger the Modal -->
-<img id="myImg" src="img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200">
+- Knowing I wanted the modal to work with any image on the gallery page, I changed the code to ```vvar img = document.getElementById('myImg');``` However, the code was still not working.
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+- After asking on Stackoverfolw, I realized my mistake: Given that I was working with several images, I needed to tell my function to loop through them, hence: 
 
-  <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  };
+}
 
