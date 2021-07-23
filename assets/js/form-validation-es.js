@@ -19,11 +19,11 @@ const checkFullname = () => {
     const fullname = fullnameEl.value.trim();
 
     if (!isRequired(fullname)) {
-        showError(fullnameEl, 'Name cannot be blank.');
+        showError(fullnameEl, 'Nombre no puede estar vacio.');
     } else if (!isBetween(fullname.length, min, max)) {
-        showError(fullnameEl, `Name must be between ${min} and ${max} letters.`);
+        showError(fullnameEl, `Nombre tiene que teneer entre ${min} y ${max} letras.`);
     } else if (!isFullnameValid(fullname)) {
-        showError(fullnameEl, 'Name can contain only letters.');
+        showError(fullnameEl, 'Nombre puede contener solamente letras.');
     } else {
         showSuccess(fullnameEl);
         valid = true;
@@ -42,9 +42,9 @@ const checkEmail = () => {
     let valid = false;
     const email = emailEl.value.trim();
     if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
+        showError(emailEl, 'Correo electrónico no puede estar vacío.');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.');
+        showError(emailEl, 'Correo electrónico es válido.');
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -97,7 +97,7 @@ function isChecked(){
     var crowdcontrol = document.getElementById('crowdcontrol').checked;
     
     if(greeter==false && docent == false && publicconcierge==false && exhibitorconcierge==false  && prconcierge == false && bagstuffer == false && crowdcontrol == false){
-    alert('Please select at least one volunteer role');
+    alert('Por favor seleccione por lo menos un papel de voluntario.');
     return false;
     }
     else{
@@ -127,10 +127,10 @@ form.addEventListener('submit', function (e) {
             method: "POST",
             data: vals,
             success: function(){
-                alert("Form data submitted.");
+                alert("Datos enviados.");
             },
             error: function(){
-                alert("There was an error.");
+                alert("Hubo un error.");
             }
         });
     }
