@@ -87,6 +87,21 @@ const showSuccess = (input) => {
     error.textContent = '';
 }
 
+function isChecked(){
+    var greeter = document.getElementById('greeter').checked;
+    var docent = document.getElementById('docent').checked;
+    var publicconcierge = document.getElementById('publicconcierge').checked;
+    var  exhibitorconcierge = document.getElementById('exhibitorconcierge').checked;
+    
+    if(greeter==false && docent == false && publicconcierge==false && exhibitorconcierge==false){
+    alert('Please select a country!');
+    return false;
+    }
+    else{
+    return true;
+    }
+    }
+
 
 form.addEventListener('submit', function (e) {
     // prevent the form from submitting
@@ -94,10 +109,12 @@ form.addEventListener('submit', function (e) {
 
     // validate fields
     let isFullnameValid = checkFullname(),
-        isEmailValid = checkEmail();
+        isEmailValid = checkEmail(),
+        isRoleValid =  isChecked();
 
     let isFormValid = isFullnameValid &&
-        isEmailValid;
+        isEmailValid &&
+        isRoleValid;
 
     /// submit to the server if the form is valid
     if(isFormValid) {
