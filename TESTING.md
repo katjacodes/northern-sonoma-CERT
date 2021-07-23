@@ -187,12 +187,13 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 - The error messages I was receiving at that point where the one iin Gitpod (see bottom of the image above) and an error message on JSHint stating that the following variable was not used:
 
- ```let isFormValid = isFullnameValid &&```\
+```let isFormValid = isFullnameValid &&```\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```isEmailValid;```
 
 despite it being used in the function to submit the form content. 
 
-- I finally reached out to another developer I know via Twitter and learned that both\ 
+- I finally reached out to another developer I know via Twitter and learned that both
+
 ```form.addEventListener('submit', function (e) {```\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```e.preventDefault();```
 
