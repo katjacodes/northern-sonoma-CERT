@@ -140,7 +140,7 @@ To work on the project code within a local IDE such as VSCode, Sublime Text, etc
 
 You will need to create a Google spreadsheet and an API Spreadsheets acount to create your own sign-up form. To do so, follow theses steps:
 1. Create a Google spreadsheet whose colum titles exactly match the ```name``` attribute of your form ```<input>``` tags.
-2. If you want to create more than one spreadsheet within the same file, you can add additional sheet. Make sure to specify which sheet to link to in the drop-down menu that appears after you create the API url in **API Spreadsheets**.
+2. If you want to create more than one spreadsheet within the same file, you can add additional sheets. Make sure to specify which sheet to link to in the drop-down menu that appears after you create the API url in **API Spreadsheets**.
 3. Create an **API Spreadsheets** account or log into yours if you already have one.
 4. On the dashboard, click on the **Google Sheets** button, sign in with your Gmail account, and select the spreadsheet you created to hold the form data.
 5. Copy the API url for the spreadsheet and paste it into line 104 of the [form validation JavaScript file](form-validation.js), as demonstrated below:
@@ -160,7 +160,9 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```}```\
       ```});```\
 
-NOTE: The API urls used in this code are for testing purposes only. The Google Sheets file can be accessed here as part of the project review: [Google Spreadsheet for form data](https://docs.google.com/spreadsheets/d/1Va0UQl8pYm_fklu2lM1uxFyFnnlQG6ktYPXwd_D1SuM/edit?usp=sharing)
+NOTE I: The API urls and Google Sheets file used in this code are for testing purposes only. The Google Sheets file can be accessed here as part of project review: [Google spreadsheet for form data](https://docs.google.com/spreadsheets/d/1Va0UQl8pYm_fklu2lM1uxFyFnnlQG6ktYPXwd_D1SuM/edit?usp=sharing)
+
+NOTE II: The real-life website will use a paid API Spreadsheets account, which includes the option to make the API url private to avoid spamming and other forms of unwanted use.
 
 
 ## Credits
