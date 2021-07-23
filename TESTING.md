@@ -155,10 +155,10 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 - After asking on Stackoverfolw, I realized my mistake: Given that I was working with several images, I needed to tell my function to loop through them, hence: 
 
-for (let i = 0; i < imgs.length; i++) {
-  imgs[i].onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-  };
-}
+```for (let i = 0; i < imgs.length; i++) {```/
+&nbsp;&nbsp;&nbsp;&nbsp;```imgs[i].onclick = function() {```/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```modal.style.display = "block";```/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```modalImg.src = this.src;```/
+&nbsp;&nbsp;&nbsp;&nbsp;```};```/
+```}```/
 
