@@ -170,3 +170,14 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 <div align="left">
     <img src="assets/images/formSubmission210712.png" alt="JavaScript form submission code as of July 12, 2021"/>
 </div>
+
+- Even with the help of Google Developer Tools, I was not able to find the error.
+- Durig a meeting with my Code Institute mentor, we discovered a ```204 No Content``` status message in the Newtor section of Google Developer Tools. My mentor explained that this stus indicates that the content has already been submitted and that the best way to avoid this confusion would be to write separete validation and form submission functions. He left it to me how to do that.
+
+### For submission not working
+- The JS code I created to fix the ```204``` issue by drawing on [JavaScript TUTORIAL](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) and [Love Spreadsheets](https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6) looked like this:
+
+<figure align="left">
+    <img src="assets/images/formSubmission210714.png" alt="JavaScript ode snippet of the transition from the validation to the submission function"/>
+    <figcaption>JavaScript code snippet of the transition from the validation to the submission function</figcaption>
+</figure>
