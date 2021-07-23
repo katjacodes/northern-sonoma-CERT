@@ -94,7 +94,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
    1. Fill out the submission form by answering all the questions in ways that resemble real answers--i.e. name and email address in conventional formatting, at least one checkbox checked--and verify that 
 
       - the borders of the name and email address fields turn green.
-      - the "Form data was submitted" message appears.
+      - the "Form data was submitted" message appears in English.
 
    2. Check the Google spreadsheet to see if the form data was recorded correctly.
 
@@ -104,9 +104,9 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
       - Enter an email address without an ```@```.
       - Do not select any checkboxes.
 
-      and verify that the the borders of the name and email address fields turn red and an error message is displayed below them and that the form cannot be submitted.
+      and verify that the the borders of the name and email address fields turn red and an error message is displayed below them and that the form cannot be submitted. All error messages should appear in English.
 
-   4. Repeat steps 1 through 3 filling out the Spanish sign-up form.
+   4. Repeat steps 1 through 3 filling out the Spanish sign-up form and verifying that all error messages appear in Spanish.
 
 #### Gallery Page
 1. Navigation bar and language selector:
