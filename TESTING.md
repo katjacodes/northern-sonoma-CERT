@@ -160,5 +160,11 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```modal.style.display = "block";```\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```modalImg.src = this.src;```\
 &nbsp;&nbsp;&nbsp;&nbsp;```};```\
-```}```
+```}```\
 
+- This solved the issue.
+
+### Form submission no longer working
+- After working for a while, form submission all of a sudden stopped working. At the time, my JS code looked like this:
+
+[Form validation and submisson code July 12, 2021](assets/images/formSubmission210712.png)
