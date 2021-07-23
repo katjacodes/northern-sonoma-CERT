@@ -97,7 +97,7 @@ function isChecked(){
     var crowdcontrol = document.getElementById('crowdcontrol').checked;
     
     if(greeter==false && docent == false && publicconcierge==false && exhibitorconcierge==false  && prconcierge == false && bagstuffer == false && crowdcontrol == false){
-    alert('Please select at least one volunteer role');
+    alert('Please select at least one volunteer role.');
     return false;
     }
     else{
