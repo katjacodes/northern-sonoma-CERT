@@ -178,6 +178,6 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 - The JS code I created to fix the ```204``` issue by drawing on [JavaScript TUTORIAL](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) and [Love Spreadsheets](https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6) looked like this:
 
 <figure align="left">
-    <img src="assets/images/formSubmission210714.png" alt="JavaScript ode snippet of the transition from the validation to the submission function"/>
+    <img src="assets/images/formSubmission210714.png" alt="JavaScript code snippet of the transition from the validation to the submission function"/>
     <figcaption>JavaScript code snippet of the transition from the validation to the submission function</figcaption>
 </figure>
