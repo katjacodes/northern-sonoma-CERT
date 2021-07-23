@@ -60,6 +60,11 @@ Every page features a background of a typical Sonoma County landscape (vineyards
 The landing page features the offical CERT logo as the **hero image**. The percentage of the screen the hero image covers increases for screens 768px and above in potrait mode and decreases for screens 768px and above in landscape mode to make the page visually appealing and the content below the hero image easy to locate. Below the hero image, visitors can find direct links to **the event flyer** in pdf format and the volunteer sign-up form. Depending on the language in which the visitor is accesing the landing page, they will be directed to the flyer and the sign-up form in either English or Spanish. In the future, the links to the current event-related information will be replaced with more general information about the program and updated links to event information. Due to the evolving business needs of the client, the homepage is designed in a way that its content can easily be updated and adapted. 
 
 #### Events
+
+**NOTE I:** _The API urls and Google Sheets file used in this code are for testing purposes only. The Google Sheets file can be accessed here as part of project review: [Google spreadsheet for form data](https://docs.google.com/spreadsheets/d/1Va0UQl8pYm_fklu2lM1uxFyFnnlQG6ktYPXwd_D1SuM/edit?usp=sharing)_
+
+**NOTE II:** _The real-life website will use a paid API Spreadsheets account, which includes the option to make the API url private to avoid spamming and other forms of unwanted use._
+
 Currently, the events pages features **information about volunteer roles** at the upcoming Fire and Earthquake Safety Expo and **sign-up form** that transmits the information directly to a Google spreadsheet using the _API Spreadsheets_ API. The form is optimized to usable on mobile screens and adapts to tablet and computer screens (768px and above). Depending on the language in which the form is displayed to the user, the form data will either be submitted to a spreasheet indicating that the user's preferred language is English or to a spreadshet indicating that the user's preferred language is Spanish. This information will help the event organizers plan any follow-up communication.
 
 #### Gallery
@@ -159,10 +164,6 @@ You will need to create a Google spreadsheet and an API Spreadsheets acount to c
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```alert("There was an error");```\
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```}```\
       ```});```\
-
-NOTE I: The API urls and Google Sheets file used in this code are for testing purposes only. The Google Sheets file can be accessed here as part of project review: [Google spreadsheet for form data](https://docs.google.com/spreadsheets/d/1Va0UQl8pYm_fklu2lM1uxFyFnnlQG6ktYPXwd_D1SuM/edit?usp=sharing)
-
-NOTE II: The real-life website will use a paid API Spreadsheets account, which includes the option to make the API url private to avoid spamming and other forms of unwanted use.
 
 
 ## Credits
