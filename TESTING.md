@@ -179,10 +179,35 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 - The JS code I created to fix the ```204``` issue by drawing on [JavaScript TUTORIAL](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) and [Love Spreadsheets](https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6) looked like this:
 
 <figure align="left">
-    <img src="assets/images/formSubmission210714.png" alt="JavaScript code snippet of the transition from the validation to the submission function"/>
+    <img src="assets/images/formSubmission210714.png" alt="JavaScript code snippet of the transition from the validation to the submission function and error message"/>
     <figcaption>JavaScript code snippet of the transition from the validation to the submission function and error message</figcaption>
 </figure>
 
 - At this point, I had tested both the code for form validation and the code for form submission separately, and both were working separately. This led me to conclude that the issue was the transitino between the two parts.
 
-- 
+- The error messages I was receiving at that point where the one iin Gitpod (see bottom of the image above) and an error message on JSHint stating that the following variable was not used:
+
+ ```let isFormValid = isFullnameValid &&```\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```isEmailValid;```
+
+despite it being used in the function to submit the form content. 
+
+- I finally reached out to another developer I know via Twitter and learned that both 
+```form.addEventListener('submit', function (e) {```\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```e.preventDefault();```
+
+and 
+
+```$("button").click(function()```
+
+serve as event listeners. 
+
+- Once I got rid of the latter line, the code worked:
+
+<figure align="left">
+    <img src="assets/images/formSubmissionCURRENT.png" alt="JavaScript code snippet of the transition from the validation to the submission function"/>
+    <figcaption>JavaScript code snippet of the transition from the validation to the submission function</figcaption>
+</figure>
+
+
+
