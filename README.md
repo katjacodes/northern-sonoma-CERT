@@ -32,7 +32,7 @@ Currently, the general goals of the website are:
 * Community members who alredy know about the Fire and Earthquake Safety Expo and want to sign up to volunteer
 * Members of CERT programs in other parts of the country who are interested in learning more about the activities of this program
 
-#### Visitors to This Website Are Searching for:
+#### Visitors to this website are searching for:
 * More information about the upcoming the Fire and Earthquake Safety Expo
 * A way to register as volunteers for the Fire and Earthquake Safety Expo
 * After the event: Share and look at photos
@@ -73,7 +73,7 @@ The gallery page currently features sample images demonstrating what the gallyer
 - [Events Page in English](events.html) and [Events Page in Spanish](events_es.html) - Provides information about the different volunteer roles available during the Fire and Earthquake Safety Expo at a glance followed by a **sign-up form**.
 - [Gallery Page in English](gllery.html) and [Gallery Page in Spanish](gallery_es.html) - Will display images from the expo after the event with the **option for visitors to enlarge them on cklick**.
 
-### Features to Implement in Future
+### Features to Implement in the Future
 - Contact form. - Client is currently using his personal email address and will set up business email address to liink the form to in the future.
 - Event evaluation form. - Content will be provided by the client after the expo.
 - Program description and overview. - Still being developed.

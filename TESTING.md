@@ -16,10 +16,10 @@
 
    - Additionally, the error ```unused variable``` was caused by the jQuery symbol ```$``` on lines 104 and 105 of the [form-validation.js file](form-validation.js). Upon further research on [Stackoverflow](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined) and in the [JSHINT documentation](https://jshint.com/docs/options/), I discovered that JSHint does not recognize jQuery unless explicitly prompted. Based on these two sources, I prompted JSHint to do just that by including ```/*globals $:false */``` at the top of the [form-validation.js file](form-validation.js). This solved the issue.
 
-### Client stories testing:
+### Client Stories Testing
 The path through the website will vary depending on the visitor's interest, existing level of familiarity with the event, and preferred language. Testing the client stories from the UX section provides further insights into the different paths taken by site visitors:
 
-#### Testing client stories from UX section of README.md
+#### Testing Client Stories from the UX Section of README.md
 _1. As a new visitor to the website, I want to be able to easily accesss information in either English or Spanish, depending on my preferred language._
 
    1. A language selection menu located in a conventional location (upper left corner) with abbreviations for English and Spanish in each language (i.e., "EN" for English and "ES" for Español) allows the visitor to easily select their preferred language on any page of the website.
@@ -53,7 +53,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
    
    3. The Facebook icon is located in the navigation bar in a conventional location (upper right corner), allowing the visitor to easily navigate to more information about CERT and the expo from any page and reach out to the event organizers with more questions. The Facebook url opens up in a new tab to allow the visitor to return to the CERT page easily.
 
-### Manual (logical) testing of all elements and functionality on every page.
+### Manual (Logical) Testing of All Elements and Functionality on Every Page.
 
 #### Home Page
 1. Navigation bar & homepage background image
@@ -80,7 +80,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
    9. Repeat steps 2 through 6 on the Events and the Gallery pages.
 
-#### Events page
+#### Events Page
 1. Navigation bar and language selector:
 
    1. Repeat verification steps for the navigation bar and the language selector on the home page.
@@ -128,10 +128,10 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 2. Click on the Letters and Bytes link to verify it leads to the developer's website  on all pages.
 
-### Further testing: 
+### Further Testing: 
 1. Asked friends, family members, and other Code Institute students to look at the site on their devices and report any issues they find. 
 
-### Bugs discovered
+### Bugs Discovered
 #### Form data submitted incompletely to the Google spreadsheet
 - After working initially, only the email address got recorded in the spreadsheet, but the name information was missing.
 
@@ -172,12 +172,17 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 </div>
 
 - Even with the help of Google Developer Tools, I was not able to find the error.
+
 - Durig a meeting with my Code Institute mentor, we discovered a ```204 No Content``` status message in the Newtor section of Google Developer Tools. My mentor explained that this stus indicates that the content has already been submitted and that the best way to avoid this confusion would be to write separete validation and form submission functions. He left it to me how to do that.
 
-### For submission not working
+### Form submission not working
 - The JS code I created to fix the ```204``` issue by drawing on [JavaScript TUTORIAL](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) and [Love Spreadsheets](https://lovespreadsheets.medium.com/save-web-html-form-data-to-google-sheets-47e48f7517e6) looked like this:
 
 <figure align="left">
     <img src="assets/images/formSubmission210714.png" alt="JavaScript code snippet of the transition from the validation to the submission function"/>
-    <figcaption>JavaScript code snippet of the transition from the validation to the submission function</figcaption>
+    <figcaption>JavaScript code snippet of the transition from the validation to the submission function and error message</figcaption>
 </figure>
+
+- At this point, I had tested both the code for form validation and the code for form submission separately, and both were working separately. This led me to conclude that the issue was the transitino between the two parts.
+
+- 
