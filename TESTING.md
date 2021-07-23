@@ -192,7 +192,7 @@ _4. As a local beat reporter, I want to have acess to basic information regardin
 
 despite it being used in the function to submit the form content. 
 
-- I finally reached out to another developer I know via Twitter and learned that both 
+- I finally reached out to another developer I know via Twitter and learned that both\ 
 ```form.addEventListener('submit', function (e) {```\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```e.preventDefault();```
 
