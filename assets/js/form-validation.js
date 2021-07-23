@@ -85,7 +85,7 @@ const showSuccess = (input) => {
     // hide the error message
     const error = formField.querySelector('small');
     error.textContent = '';
-}
+};
 
 function isChecked(){
     var greeter = document.getElementById('greeter').checked;
